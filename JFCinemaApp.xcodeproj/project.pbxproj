@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */; };
+		DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11531F4AAA8900BD9532 /* ViewController.swift */; };
+		DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11551F4AAA8900BD9532 /* Main.storyboard */; };
+		DC4C11591F4AAA8900BD9532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11581F4AAA8900BD9532 /* Assets.xcassets */; };
+		DC4C115C1F4AAA8900BD9532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */; };
+		DC4C11671F4AAA8900BD9532 /* JFCinemaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */; };
+		DC4C11721F4AAA8900BD9532 /* JFCinemaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11711F4AAA8900BD9532 /* JFCinemaAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC4C11631F4AAA8900BD9532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4C11461F4AAA8900BD9532 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4C114D1F4AAA8900BD9532;
+			remoteInfo = JFCinemaApp;
+		};
+		DC4C116E1F4AAA8900BD9532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4C11461F4AAA8900BD9532 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4C114D1F4AAA8900BD9532;
+			remoteInfo = JFCinemaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC4C11531F4AAA8900BD9532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC4C11561F4AAA8900BD9532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC4C11581F4AAA8900BD9532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC4C115B1F4AAA8900BD9532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC4C115D1F4AAA8900BD9532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4C11621F4AAA8900BD9532 /* JFCinemaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFCinemaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCinemaAppTests.swift; sourceTree = "<group>"; };
+		DC4C11681F4AAA8900BD9532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4C116D1F4AAA8900BD9532 /* JFCinemaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFCinemaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4C11711F4AAA8900BD9532 /* JFCinemaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCinemaAppUITests.swift; sourceTree = "<group>"; };
+		DC4C11731F4AAA8900BD9532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC4C114B1F4AAA8900BD9532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4C115F1F4AAA8900BD9532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4C116A1F4AAA8900BD9532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC4C11451F4AAA8900BD9532 = {
+			isa = PBXGroup;
+			children = (
+				DC4C11501F4AAA8900BD9532 /* JFCinemaApp */,
+				DC4C11651F4AAA8900BD9532 /* JFCinemaAppTests */,
+				DC4C11701F4AAA8900BD9532 /* JFCinemaAppUITests */,
+				DC4C114F1F4AAA8900BD9532 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC4C114F1F4AAA8900BD9532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */,
+				DC4C11621F4AAA8900BD9532 /* JFCinemaAppTests.xctest */,
+				DC4C116D1F4AAA8900BD9532 /* JFCinemaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC4C11501F4AAA8900BD9532 /* JFCinemaApp */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */,
+				DC4C11531F4AAA8900BD9532 /* ViewController.swift */,
+				DC4C11551F4AAA8900BD9532 /* Main.storyboard */,
+				DC4C11581F4AAA8900BD9532 /* Assets.xcassets */,
+				DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */,
+				DC4C115D1F4AAA8900BD9532 /* Info.plist */,
+			);
+			path = JFCinemaApp;
+			sourceTree = "<group>";
+		};
+		DC4C11651F4AAA8900BD9532 /* JFCinemaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */,
+				DC4C11681F4AAA8900BD9532 /* Info.plist */,
+			);
+			path = JFCinemaAppTests;
+			sourceTree = "<group>";
+		};
+		DC4C11701F4AAA8900BD9532 /* JFCinemaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C11711F4AAA8900BD9532 /* JFCinemaAppUITests.swift */,
+				DC4C11731F4AAA8900BD9532 /* Info.plist */,
+			);
+			path = JFCinemaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC4C114D1F4AAA8900BD9532 /* JFCinemaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4C11761F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaApp" */;
+			buildPhases = (
+				DC4C114A1F4AAA8900BD9532 /* Sources */,
+				DC4C114B1F4AAA8900BD9532 /* Frameworks */,
+				DC4C114C1F4AAA8900BD9532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFCinemaApp;
+			productName = JFCinemaApp;
+			productReference = DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC4C11611F4AAA8900BD9532 /* JFCinemaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4C11791F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaAppTests" */;
+			buildPhases = (
+				DC4C115E1F4AAA8900BD9532 /* Sources */,
+				DC4C115F1F4AAA8900BD9532 /* Frameworks */,
+				DC4C11601F4AAA8900BD9532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4C11641F4AAA8900BD9532 /* PBXTargetDependency */,
+			);
+			name = JFCinemaAppTests;
+			productName = JFCinemaAppTests;
+			productReference = DC4C11621F4AAA8900BD9532 /* JFCinemaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC4C116C1F4AAA8900BD9532 /* JFCinemaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4C117C1F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaAppUITests" */;
+			buildPhases = (
+				DC4C11691F4AAA8900BD9532 /* Sources */,
+				DC4C116A1F4AAA8900BD9532 /* Frameworks */,
+				DC4C116B1F4AAA8900BD9532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4C116F1F4AAA8900BD9532 /* PBXTargetDependency */,
+			);
+			name = JFCinemaAppUITests;
+			productName = JFCinemaAppUITests;
+			productReference = DC4C116D1F4AAA8900BD9532 /* JFCinemaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC4C11461F4AAA8900BD9532 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "James Huang";
+				TargetAttributes = {
+					DC4C114D1F4AAA8900BD9532 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DC4C11611F4AAA8900BD9532 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC4C114D1F4AAA8900BD9532;
+					};
+					DC4C116C1F4AAA8900BD9532 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC4C114D1F4AAA8900BD9532;
+					};
+				};
+			};
+			buildConfigurationList = DC4C11491F4AAA8900BD9532 /* Build configuration list for PBXProject "JFCinemaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC4C11451F4AAA8900BD9532;
+			productRefGroup = DC4C114F1F4AAA8900BD9532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4C114D1F4AAA8900BD9532 /* JFCinemaApp */,
+				DC4C11611F4AAA8900BD9532 /* JFCinemaAppTests */,
+				DC4C116C1F4AAA8900BD9532 /* JFCinemaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC4C114C1F4AAA8900BD9532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4C115C1F4AAA8900BD9532 /* LaunchScreen.storyboard in Resources */,
+				DC4C11591F4AAA8900BD9532 /* Assets.xcassets in Resources */,
+				DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4C11601F4AAA8900BD9532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4C116B1F4AAA8900BD9532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC4C114A1F4AAA8900BD9532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */,
+				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4C115E1F4AAA8900BD9532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4C11671F4AAA8900BD9532 /* JFCinemaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4C11691F4AAA8900BD9532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4C11721F4AAA8900BD9532 /* JFCinemaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC4C11641F4AAA8900BD9532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4C114D1F4AAA8900BD9532 /* JFCinemaApp */;
+			targetProxy = DC4C11631F4AAA8900BD9532 /* PBXContainerItemProxy */;
+		};
+		DC4C116F1F4AAA8900BD9532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4C114D1F4AAA8900BD9532 /* JFCinemaApp */;
+			targetProxy = DC4C116E1F4AAA8900BD9532 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC4C11551F4AAA8900BD9532 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4C11561F4AAA8900BD9532 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4C115B1F4AAA8900BD9532 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC4C11741F4AAA8900BD9532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC4C11751F4AAA8900BD9532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC4C11771F4AAA8900BD9532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JFCinemaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC4C11781F4AAA8900BD9532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JFCinemaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DC4C117A1F4AAA8900BD9532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JFCinemaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFCinemaApp.app/JFCinemaApp";
+			};
+			name = Debug;
+		};
+		DC4C117B1F4AAA8900BD9532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JFCinemaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFCinemaApp.app/JFCinemaApp";
+			};
+			name = Release;
+		};
+		DC4C117D1F4AAA8900BD9532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JFCinemaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JFCinemaApp;
+			};
+			name = Debug;
+		};
+		DC4C117E1F4AAA8900BD9532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JFCinemaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JFCinemaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC4C11491F4AAA8900BD9532 /* Build configuration list for PBXProject "JFCinemaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4C11741F4AAA8900BD9532 /* Debug */,
+				DC4C11751F4AAA8900BD9532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4C11761F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4C11771F4AAA8900BD9532 /* Debug */,
+				DC4C11781F4AAA8900BD9532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC4C11791F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4C117A1F4AAA8900BD9532 /* Debug */,
+				DC4C117B1F4AAA8900BD9532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC4C117C1F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4C117D1F4AAA8900BD9532 /* Debug */,
+				DC4C117E1F4AAA8900BD9532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC4C11461F4AAA8900BD9532 /* Project object */;
+}
