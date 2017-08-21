@@ -13,21 +13,19 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var myTableView: UITableView!
     
-    let model = generateRandomData()
-    let tuesday = generateRandomData()
-    
-    //var storedOffsets = [Int: CGFloat]()
-    
-    var id = ""
-    
     @IBAction func refreshButtonTapped(sender: AnyObject) {
         myTableView.reloadData()
     }
     
     @IBAction func segmentedControlActionChanged(sender: AnyObject) {
-        
         myTableView.reloadData()
     }
+    
+    let model = generateRandomData()
+    let tuesday = generateRandomData()
+    var storedOffsets = [Int: CGFloat]()
+    var id = ""
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -43,8 +41,7 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
         default:
             break
         }
-        
-        
+
         return day_count
     }
     
@@ -59,14 +56,18 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         guard let tableViewCell = cell as? SessionTableViewCell else { return }
+        
         tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
-        //tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
+        
+        tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
+        
     }
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        //guard let tableViewCell = cell as? SessionTableViewCell else { return }
         
-        //storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
+        guard let tableViewCell = cell as? SessionTableViewCell else { return }
+        
+        storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
 }
 
@@ -118,35 +119,16 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
         return cell1
     }
     
-    /** send movie desc to descView **/
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //
-    //        if segue.identifier == "DescView" {
-    //            let destinationViewController = segue.destination as! DescViewController
-    //            if let cell = sender as? SessionCollectionViewCell
-    //            {
-    //                let cell2 = sender as? SessionTableViewController
-    //
-    //                let indexPath = cell.tag
-    //                destinationViewController.id = (model[0][indexPath].titleLabel?.text)!
-    //
-    //            }
-    //
-    //
-    //        }
-    //
-    //    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
-        //        id = (model[collectionView.tag][indexPath.item].titleLabel?.text)!
-        //
+        
         let descViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! DescViewController
+        
         descViewController.row = collectionView.tag
         descViewController.path = indexPath
         descViewController.content = (model[collectionView.tag][indexPath.item].titleLabel?.text)
-        self.navigationController?.pushViewController(descViewController, animated: true)
         
+        self.navigationController?.pushViewController(descViewController, animated: true)
     }
     
 }

@@ -21,9 +21,8 @@ class SessionTableViewCell: UITableViewCell {
         collectionView.reloadData()
     }
     
-    
-    //    var collectionViewOffset: CGFloat {
-    //        set { collectionView.contentOffset.x = newValue }
-    //        get { return collectionView.contentOffset.x }
-    //    }
+    var collectionViewOffset: CGFloat {
+        set { collectionView.contentOffset.x = newValue }
+        get { return collectionView.contentOffset.x }
+    }
 }

@@ -17,7 +17,6 @@ class DescViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Collection view at row \(row!) selected index path \(path!)")
