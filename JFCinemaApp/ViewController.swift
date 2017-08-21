@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var mainController: UITableView!
+    
+    let backdrop_images = ["dunkirk_backdrop", "minions_backdrop", "spiderman_backdrop", "valerian_backdrop"];
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return backdrop_images.count
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
+        
+        cell.myImage.image = UIImage(named: (backdrop_images[indexPath.row] + ".jpg"))
+        cell.myLabel.text = backdrop_images[indexPath.row]
+        
+        return cell
     }
-
-
+    
 }
-

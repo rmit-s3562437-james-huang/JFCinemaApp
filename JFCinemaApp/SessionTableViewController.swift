@@ -1,0 +1,152 @@
+//
+//  SessionTableViewController.swift
+//  JFCinemaApp
+//
+//  Created by James Huang on 21/8/17.
+//  Copyright © 2017 James Huang. All rights reserved.
+//
+
+import UIKit
+
+class SessionTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var segmentedController: UISegmentedControl!
+    @IBOutlet weak var myTableView: UITableView!
+    
+    let model = generateRandomData()
+    let tuesday = generateRandomData()
+    
+    //var storedOffsets = [Int: CGFloat]()
+    
+    var id = ""
+    
+    @IBAction func refreshButtonTapped(sender: AnyObject) {
+        myTableView.reloadData()
+    }
+    
+    @IBAction func segmentedControlActionChanged(sender: AnyObject) {
+        
+        myTableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        var day_count = 0
+        
+        switch (segmentedController.selectedSegmentIndex) {
+        case 0:
+            day_count = model.count
+            break
+        case 1:
+            day_count = tuesday.count
+            break
+        default:
+            break
+        }
+        
+        
+        return day_count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        //myTableView.tag = indexPath.row
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let tableViewCell = cell as? SessionTableViewCell else { return }
+        tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
+        //tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //guard let tableViewCell = cell as? SessionTableViewCell else { return }
+        
+        //storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
+    }
+}
+
+extension SessionTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return model[collectionView.tag].count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        
+        switch (segmentedController.selectedSegmentIndex) {
+        case 0:
+            cell1.backgroundView = model[collectionView.tag][indexPath.item]
+            
+            cell1.tag = indexPath.item
+            
+            cell1.backgroundColor = UIColor.gray;
+            
+            cell1.layer.borderColor = UIColor.black.cgColor
+            
+            cell1.layer.borderWidth = 1
+            
+            cell1.layer.cornerRadius = 8
+            break;
+        case 1:
+            cell2.backgroundView = tuesday[collectionView.tag][indexPath.item]
+            
+            cell2.tag = indexPath.item
+            
+            cell2.backgroundColor = UIColor.gray;
+            
+            cell2.layer.borderColor = UIColor.black.cgColor
+            
+            cell2.layer.borderWidth = 1
+            
+            cell2.layer.cornerRadius = 8
+            break;
+        default:
+            break;
+            
+        }
+        
+        return cell1
+    }
+    
+    /** send movie desc to descView **/
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //
+    //        if segue.identifier == "DescView" {
+    //            let destinationViewController = segue.destination as! DescViewController
+    //            if let cell = sender as? SessionCollectionViewCell
+    //            {
+    //                let cell2 = sender as? SessionTableViewController
+    //
+    //                let indexPath = cell.tag
+    //                destinationViewController.id = (model[0][indexPath].titleLabel?.text)!
+    //
+    //            }
+    //
+    //
+    //        }
+    //
+    //    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+        //        id = (model[collectionView.tag][indexPath.item].titleLabel?.text)!
+        //
+        let descViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! DescViewController
+        descViewController.row = collectionView.tag
+        descViewController.path = indexPath
+        descViewController.content = (model[collectionView.tag][indexPath.item].titleLabel?.text)
+        self.navigationController?.pushViewController(descViewController, animated: true)
+        
+    }
+    
+}
