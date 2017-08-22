@@ -404,7 +404,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="223"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xqI-Pc-sGV" id="Uab-rm-YZq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEu-ef-oxz">
