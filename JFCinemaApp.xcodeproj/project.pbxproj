@@ -589,6 +589,7 @@
 				DC4C11781F4AAA8900BD9532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4C11791F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +598,7 @@
 				DC4C117B1F4AAA8900BD9532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4C117C1F4AAA8900BD9532 /* Build configuration list for PBXNativeTarget "JFCinemaAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +607,7 @@
 				DC4C117E1F4AAA8900BD9532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

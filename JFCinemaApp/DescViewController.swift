@@ -15,6 +15,11 @@ class DescViewController: UIViewController {
     var path: IndexPath!
     var content: String!
     
+
+    @IBOutlet weak var childTickets: UILabel!
+    @IBOutlet weak var concessionTickets: UILabel!
+    @IBOutlet weak var adultTickets: UILabel!
+    
     @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
@@ -28,5 +33,23 @@ class DescViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // Stepper funcs
+    @IBAction func childStepper(_ sender: UIStepper) {
+        let intChildTickets:Int = Int(sender.value)
+        childTickets.text = String(intChildTickets)
+    }
+    
+    @IBAction func concessionStepper(_ sender: UIStepper) {
+        let intChildTickets:Int = Int(sender.value)
+        concessionTickets.text = String(intChildTickets)
+    }
+
+    
+    @IBAction func adultStepper(_ sender: UIStepper) {
+        let intChildTickets:Int = Int(sender.value)
+        adultTickets.text = String(intChildTickets)
+    }
+    
     
 }
