@@ -262,7 +262,6 @@
                     </view>
                     <connections>
                         <outlet property="adultTickets" destination="lz3-3C-OXm" id="cA6-ec-wgX"/>
-                        <outlet property="childNumberOfTickets" destination="FKB-oq-e03" id="ZcQ-0k-Ihn"/>
                         <outlet property="childTickets" destination="FKB-oq-e03" id="dCa-bO-6v6"/>
                         <outlet property="concessionTickets" destination="Hhq-fl-aIf" id="4d5-W0-b74"/>
                         <outlet property="timeLabel" destination="hui-t2-Wy2" id="z8q-cO-gV7"/>

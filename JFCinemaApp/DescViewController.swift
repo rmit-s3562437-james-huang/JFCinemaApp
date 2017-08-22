@@ -14,7 +14,6 @@ class DescViewController: UIViewController {
     var row: Int!
     var path: IndexPath!
     var content: String!
-    
 
     @IBOutlet weak var childTickets: UILabel!
     @IBOutlet weak var concessionTickets: UILabel!
