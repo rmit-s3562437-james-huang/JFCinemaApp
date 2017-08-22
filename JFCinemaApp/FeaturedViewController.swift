@@ -14,6 +14,8 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var featured_images = ["atomic_blonde", "doctor_strange", "insurgent", "john_wick", "baby_driver"]
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

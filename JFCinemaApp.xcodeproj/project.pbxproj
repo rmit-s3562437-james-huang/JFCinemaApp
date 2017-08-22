@@ -30,6 +30,9 @@
 		DC4C119E1F4AE12400BD9532 /* doctor_strange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11991F4AE12400BD9532 /* doctor_strange.jpg */; };
 		DC4C119F1F4AE12400BD9532 /* insurgent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C119A1F4AE12400BD9532 /* insurgent.jpg */; };
 		DC4C11A01F4AE12400BD9532 /* john_wick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C119B1F4AE12400BD9532 /* john_wick.jpg */; };
+		DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */; };
+		DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */; };
+		DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A91F4B2D4800BD9532 /* Movies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		DC4C11991F4AE12400BD9532 /* doctor_strange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor_strange.jpg; sourceTree = "<group>"; };
 		DC4C119A1F4AE12400BD9532 /* insurgent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = insurgent.jpg; sourceTree = "<group>"; };
 		DC4C119B1F4AE12400BD9532 /* john_wick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john_wick.jpg; sourceTree = "<group>"; };
+		DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		DC4C11A91F4B2D4800BD9532 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 				DC4C117F1F4ADDEE00BD9532 /* ViewControllerTableViewCell.swift */,
 				DC4C118B1F4ADFE400BD9532 /* DescViewController.swift */,
 				DC4C11891F4ADFB700BD9532 /* helper.swift */,
+				DC4C11A91F4B2D4800BD9532 /* Movies.swift */,
+				DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */,
+				DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */,
 				DC4C11551F4AAA8900BD9532 /* Main.storyboard */,
 				DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */,
 				DC4C115D1F4AAA8900BD9532 /* Info.plist */,
@@ -335,10 +344,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4C11821F4ADE3900BD9532 /* SessionTableViewCell.swift in Sources */,
+				DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */,
 				DC4C118C1F4ADFE400BD9532 /* DescViewController.swift in Sources */,
+				DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */,
 				DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */,
 				DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */,
 				DC4C11881F4ADF0900BD9532 /* FeaturedViewController.swift in Sources */,
+				DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */,
 				DC4C11841F4ADE6D00BD9532 /* SessionTableViewController.swift in Sources */,
 				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
 				DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */,
