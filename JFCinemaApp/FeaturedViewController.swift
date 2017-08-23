@@ -12,7 +12,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var FeaturedCollectionView: UICollectionView!
     
-    var featured_images = ["atomic_blonde", "doctor_strange", "insurgent", "john_wick", "baby_driver"]
+    var featured_images = ["dunkirk", "minions", "spiderman", "valerian"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
