@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8521960A1F4D633900A32C38 /* dunkirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196061F4D633900A32C38 /* dunkirk.jpg */; };
+		8521960B1F4D633900A32C38 /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196071F4D633900A32C38 /* minions.jpg */; };
+		8521960C1F4D633900A32C38 /* spiderman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196081F4D633900A32C38 /* spiderman.jpg */; };
+		8521960D1F4D633900A32C38 /* valerian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196091F4D633900A32C38 /* valerian.jpg */; };
 		DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */; };
 		DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11531F4AAA8900BD9532 /* ViewController.swift */; };
 		DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11551F4AAA8900BD9532 /* Main.storyboard */; };
@@ -25,11 +29,6 @@
 		DC4C11931F4AE0E400BD9532 /* minions_backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C118F1F4AE0E400BD9532 /* minions_backdrop.jpg */; };
 		DC4C11941F4AE0E400BD9532 /* spiderman_backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11901F4AE0E400BD9532 /* spiderman_backdrop.jpg */; };
 		DC4C11951F4AE0E400BD9532 /* valerian_backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11911F4AE0E400BD9532 /* valerian_backdrop.jpg */; };
-		DC4C119C1F4AE12400BD9532 /* atomic_blonde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11971F4AE12400BD9532 /* atomic_blonde.jpg */; };
-		DC4C119D1F4AE12400BD9532 /* baby_driver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11981F4AE12400BD9532 /* baby_driver.jpg */; };
-		DC4C119E1F4AE12400BD9532 /* doctor_strange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11991F4AE12400BD9532 /* doctor_strange.jpg */; };
-		DC4C119F1F4AE12400BD9532 /* insurgent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C119A1F4AE12400BD9532 /* insurgent.jpg */; };
-		DC4C11A01F4AE12400BD9532 /* john_wick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C119B1F4AE12400BD9532 /* john_wick.jpg */; };
 		DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */; };
 		DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */; };
 		DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A91F4B2D4800BD9532 /* Movies.swift */; };
@@ -53,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852196061F4D633900A32C38 /* dunkirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk.jpg; sourceTree = "<group>"; };
+		852196071F4D633900A32C38 /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions.jpg; sourceTree = "<group>"; };
+		852196081F4D633900A32C38 /* spiderman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spiderman.jpg; sourceTree = "<group>"; };
+		852196091F4D633900A32C38 /* valerian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valerian.jpg; sourceTree = "<group>"; };
 		DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C11531F4AAA8900BD9532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,11 +80,6 @@
 		DC4C118F1F4AE0E400BD9532 /* minions_backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions_backdrop.jpg; sourceTree = "<group>"; };
 		DC4C11901F4AE0E400BD9532 /* spiderman_backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spiderman_backdrop.jpg; sourceTree = "<group>"; };
 		DC4C11911F4AE0E400BD9532 /* valerian_backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valerian_backdrop.jpg; sourceTree = "<group>"; };
-		DC4C11971F4AE12400BD9532 /* atomic_blonde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atomic_blonde.jpg; sourceTree = "<group>"; };
-		DC4C11981F4AE12400BD9532 /* baby_driver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby_driver.jpg; sourceTree = "<group>"; };
-		DC4C11991F4AE12400BD9532 /* doctor_strange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor_strange.jpg; sourceTree = "<group>"; };
-		DC4C119A1F4AE12400BD9532 /* insurgent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = insurgent.jpg; sourceTree = "<group>"; };
-		DC4C119B1F4AE12400BD9532 /* john_wick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john_wick.jpg; sourceTree = "<group>"; };
 		DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		DC4C11A91F4B2D4800BD9532 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -190,11 +188,10 @@
 		DC4C11961F4AE12400BD9532 /* SessionImages */ = {
 			isa = PBXGroup;
 			children = (
-				DC4C11971F4AE12400BD9532 /* atomic_blonde.jpg */,
-				DC4C11981F4AE12400BD9532 /* baby_driver.jpg */,
-				DC4C11991F4AE12400BD9532 /* doctor_strange.jpg */,
-				DC4C119A1F4AE12400BD9532 /* insurgent.jpg */,
-				DC4C119B1F4AE12400BD9532 /* john_wick.jpg */,
+				852196061F4D633900A32C38 /* dunkirk.jpg */,
+				852196071F4D633900A32C38 /* minions.jpg */,
+				852196081F4D633900A32C38 /* spiderman.jpg */,
+				852196091F4D633900A32C38 /* valerian.jpg */,
 			);
 			name = SessionImages;
 			path = sessionImages;
@@ -307,15 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4C119C1F4AE12400BD9532 /* atomic_blonde.jpg in Resources */,
-				DC4C119E1F4AE12400BD9532 /* doctor_strange.jpg in Resources */,
-				DC4C119F1F4AE12400BD9532 /* insurgent.jpg in Resources */,
 				DC4C11951F4AE0E400BD9532 /* valerian_backdrop.jpg in Resources */,
 				DC4C11921F4AE0E400BD9532 /* dunkirk_backdrop.jpg in Resources */,
+				8521960A1F4D633900A32C38 /* dunkirk.jpg in Resources */,
+				8521960C1F4D633900A32C38 /* spiderman.jpg in Resources */,
+				8521960B1F4D633900A32C38 /* minions.jpg in Resources */,
+				8521960D1F4D633900A32C38 /* valerian.jpg in Resources */,
 				DC4C115C1F4AAA8900BD9532 /* LaunchScreen.storyboard in Resources */,
-				DC4C119D1F4AE12400BD9532 /* baby_driver.jpg in Resources */,
 				DC4C11931F4AE0E400BD9532 /* minions_backdrop.jpg in Resources */,
-				DC4C11A01F4AE12400BD9532 /* john_wick.jpg in Resources */,
 				DC4C11941F4AE0E400BD9532 /* spiderman_backdrop.jpg in Resources */,
 				DC4C11591F4AAA8900BD9532 /* Assets.xcassets in Resources */,
 				DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */,
