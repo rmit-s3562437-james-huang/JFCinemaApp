@@ -11,6 +11,7 @@ import UIKit
 
 class BookViewController: UIViewController {
     
+    var movieTitle: String!
     var row: Int!
     var path: IndexPath!
     var content: String!
@@ -18,13 +19,14 @@ class BookViewController: UIViewController {
     @IBOutlet weak var childTickets: UILabel!
     @IBOutlet weak var concessionTickets: UILabel!
     @IBOutlet weak var adultTickets: UILabel!
-    
+    @IBOutlet weak var myHeading: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Collection view at row \(row!) selected index path \(path!)")
-        self.timeLabel.text = "\(content!)"
+        self.myHeading.text = movieTitle!
+        self.timeLabel.text = content!
         // Do any additional setup after loading the view.
     }
     

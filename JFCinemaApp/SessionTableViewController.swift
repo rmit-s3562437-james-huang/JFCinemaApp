@@ -27,19 +27,23 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     
     let model = generateRandomData()
     
+    var movieModel = Singleton.getInstance.movieList.naturalOrder()
+    
     
     var storedOffsets = [Int: CGFloat]()
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return model.count
+        return movieModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SessionTableViewCell
+        
+        cell.movieTitle.text = movieModel[indexPath.item].title
+        
         return cell
     }
     
@@ -59,6 +63,7 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
         
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
+    
     
 }
 
@@ -95,7 +100,8 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
         
         let bookViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! BookViewController
-        
+
+        bookViewController.movieTitle = movieModel[collectionView.tag].title
         bookViewController.row = collectionView.tag
         bookViewController.path = indexPath
         bookViewController.content = (model[collectionView.tag]           [indexPath.item].titleLabel?.text)

@@ -59,6 +59,8 @@
                                                     <rect key="frame" x="35" y="37" width="345" height="57"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="666" id="VJt-dC-bV6"/>
+                                                        <constraint firstAttribute="height" constant="57" id="Znw-a5-wdG"/>
                                                         <constraint firstAttribute="height" constant="57" id="naA-Ig-lhB"/>
                                                         <constraint firstAttribute="width" constant="345" id="rhv-wt-wVs"/>
                                                     </constraints>
@@ -78,6 +80,20 @@
                                                             </view>
                                                         </collectionViewCell>
                                                     </cells>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="VJt-dC-bV6"/>
+                                                            <exclude reference="Znw-a5-wdG"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=compact-widthClass=regular">
+                                                        <mask key="constraints">
+                                                            <include reference="VJt-dC-bV6"/>
+                                                            <include reference="Znw-a5-wdG"/>
+                                                            <exclude reference="naA-Ig-lhB"/>
+                                                            <exclude reference="rhv-wt-wVs"/>
+                                                        </mask>
+                                                    </variation>
                                                     <connections>
                                                         <outlet property="dataSource" destination="NPs-np-tQ3" id="IFf-pL-iMN"/>
                                                         <outlet property="delegate" destination="NPs-np-tQ3" id="Isx-F4-U2r"/>
@@ -87,18 +103,35 @@
                                                     <rect key="frame" x="35" y="8" width="102" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vDD-W4-Tew" firstAttribute="top" secondItem="RFF-wn-YNq" secondAttribute="topMargin" constant="29" id="Wjl-xw-Dur"/>
+                                                <constraint firstItem="vDD-W4-Tew" firstAttribute="top" secondItem="RFF-wn-YNq" secondAttribute="topMargin" constant="29" id="k3Y-Hx-n5R"/>
+                                                <constraint firstItem="vDD-W4-Tew" firstAttribute="leading" secondItem="RFF-wn-YNq" secondAttribute="leadingMargin" constant="27" id="rfb-Kx-ulZ"/>
                                                 <constraint firstItem="vDD-W4-Tew" firstAttribute="leading" secondItem="RFF-wn-YNq" secondAttribute="leadingMargin" constant="27" id="zXd-Oi-UPw"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="k3Y-Hx-n5R"/>
+                                                    <exclude reference="rfb-Kx-ulZ"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=compact-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <exclude reference="Wjl-xw-Dur"/>
+                                                    <include reference="k3Y-Hx-n5R"/>
+                                                    <include reference="rfb-Kx-ulZ"/>
+                                                    <exclude reference="zXd-Oi-UPw"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="collectionView" destination="vDD-W4-Tew" id="aDk-gb-sCG"/>
+                                            <outlet property="movieTitle" destination="o34-Kr-wMQ" id="aSi-zT-YcP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -128,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WI4-gG-ZjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480" y="-78"/>
+            <point key="canvasLocation" x="1478.2608695652175" y="-78.260869565217391"/>
         </scene>
         <!--Book View Controller-->
         <scene sceneID="NBV-FR-e1C">
@@ -795,6 +828,7 @@
                         <outlet property="adultTickets" destination="lz3-3C-OXm" id="cA6-ec-wgX"/>
                         <outlet property="childTickets" destination="FKB-oq-e03" id="dCa-bO-6v6"/>
                         <outlet property="concessionTickets" destination="Hhq-fl-aIf" id="4d5-W0-b74"/>
+                        <outlet property="myHeading" destination="xPs-0P-3hr" id="a8D-T8-OwR"/>
                         <outlet property="timeLabel" destination="hui-t2-Wy2" id="z8q-cO-gV7"/>
                     </connections>
                 </viewController>

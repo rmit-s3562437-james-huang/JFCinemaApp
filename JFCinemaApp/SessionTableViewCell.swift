@@ -10,7 +10,10 @@ import UIKit
 
 class SessionTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var model = Singleton.getInstance.movieList.naturalOrder()
     
     /** D type confroms to both the datasource and delagate protocols **/
     func setCollectionViewDataSourceDelegate <D: UICollectionViewDataSource & UICollectionViewDelegate>
@@ -25,4 +28,5 @@ class SessionTableViewCell: UITableViewCell {
         set { collectionView.contentOffset.x = newValue }
         get { return collectionView.contentOffset.x }
     }
+    
 }
