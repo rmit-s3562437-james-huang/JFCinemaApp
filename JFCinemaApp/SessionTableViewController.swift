@@ -90,13 +90,13 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
         
-        let descViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! DescViewController
+        let bookViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! BookViewController
         
-        descViewController.row = collectionView.tag
-        descViewController.path = indexPath
-        descViewController.content = (model[collectionView.tag]           [indexPath.item].titleLabel?.text)
+        bookViewController.row = collectionView.tag
+        bookViewController.path = indexPath
+        bookViewController.content = (model[collectionView.tag]           [indexPath.item].titleLabel?.text)
 
-        self.navigationController?.pushViewController(descViewController, animated: true)
+        self.navigationController?.pushViewController(bookViewController, animated: true)
     }
     
 }
