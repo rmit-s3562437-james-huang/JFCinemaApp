@@ -13,6 +13,10 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var myTableView: UITableView!
     
+    override func viewDidLoad() {
+        self.myTableView.allowsSelection = false
+    }
+    
     @IBAction func refreshButtonTapped(sender: AnyObject) {
         myTableView.reloadData()
     }

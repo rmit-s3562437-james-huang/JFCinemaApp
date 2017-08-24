@@ -12,9 +12,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var FeaturedCollectionView: UICollectionView!
     
-    var featured_images = ["atomic_blonde", "doctor_strange", "insurgent", "john_wick", "baby_driver"]
-    
-    
+    var model = Singleton.getInstance.movieList.naturalOrder()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +26,14 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return featured_images.count
+        return model.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featured_cell", for: indexPath) as! FeaturedCollectionViewCell
         
         // set images
-        cell.sessionImageView.image = UIImage(named: featured_images[indexPath.row] + ".jpg")
+        cell.sessionImageView.image = model[indexPath.row].sessionImg
         return cell
     }
     

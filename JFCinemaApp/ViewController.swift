@@ -19,6 +19,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return model.count
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.mainController.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.mainController.allowsSelection = false
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell

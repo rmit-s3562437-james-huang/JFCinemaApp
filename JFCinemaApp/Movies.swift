@@ -45,6 +45,21 @@ enum Movies: Int {
         }
     }
     
+    var sessionImg: UIImage
+    {
+        get
+        {
+            switch self {
+            case .minions: return UIImage(named: "minions.jpg")!
+            case .dunkirk: return UIImage(named: "dunkirk.jpg")!
+            case .spiderman: return UIImage(named: "spiderman.jpg")!
+            case .valerian: return UIImage(named: "valerian.jpg")!
+            default:
+                return UIImage(named: "minions.jpg")!
+            }
+        }
+    }
+    
     var backdrop: UIImage
     {
         get
