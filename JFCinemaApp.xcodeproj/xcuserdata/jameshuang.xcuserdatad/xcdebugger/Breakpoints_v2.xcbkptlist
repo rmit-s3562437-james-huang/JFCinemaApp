@@ -38,70 +38,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JFCinemaApp/SessionTableViewController.swift"
-            timestampString = "525081322.264439"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JFCinemaApp/SessionTableViewController.swift"
-            timestampString = "525081322.264439"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "JFCinemaApp.SessionTableViewController.collectionView (__ObjC.UICollectionView, didSelectItemAt : Foundation.IndexPath) -&gt; ()"
-                  moduleName = "JFCinemaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/SessionTableViewController.swift"
-                  timestampString = "525080505.29071"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "526">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "JFCinemaApp.SessionTableViewController.collectionView (__ObjC.UICollectionView, didSelectItemAt : Foundation.IndexPath) -&gt; ()"
-                  moduleName = "JFCinemaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/SessionTableViewController.swift"
-                  timestampString = "525080505.294106"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "1969">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JFCinemaApp/SessionTableViewController.swift"
             timestampString = "525078636.732177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -118,7 +54,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/SessionTableViewController.swift"
-                  timestampString = "525080505.301623"
+                  timestampString = "525241013.97186"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -133,7 +69,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/SessionTableViewController.swift"
-                  timestampString = "525080505.304916"
+                  timestampString = "525241013.975238"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -148,12 +84,12 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/SessionTableViewController.swift"
-                  timestampString = "525080505.308154"
+                  timestampString = "525241013.978218"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "158">
+                  offsetFromSymbolStart = "153">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -163,7 +99,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/SessionTableViewController.swift"
-                  timestampString = "525080505.311178"
+                  timestampString = "525241013.981076"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -171,22 +107,6 @@
                   offsetFromSymbolStart = "88">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JFCinemaApp/SessionTableViewController.swift"
-            timestampString = "525081322.264439"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -244,7 +164,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.336947"
+                  timestampString = "525241014.003458"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -259,7 +179,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.339866"
+                  timestampString = "525241014.006654"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -274,7 +194,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.342575"
+                  timestampString = "525241014.009744"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -289,7 +209,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.34495"
+                  timestampString = "525241014.013007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -304,7 +224,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.347784"
+                  timestampString = "525241014.016732"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -333,11 +253,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "JFCinemaApp.DescViewController.timeLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "JFCinemaApp.DescViewController.childTickets.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.358411"
+                  timestampString = "525241014.028048"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -348,11 +268,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "JFCinemaApp.DescViewController.timeLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  symbolName = "JFCinemaApp.DescViewController.childTickets.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.361958"
+                  timestampString = "525241014.031248"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -367,7 +287,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.365072"
+                  timestampString = "525241014.034274"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -382,7 +302,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.368086"
+                  timestampString = "525241014.037432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -415,7 +335,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.377977"
+                  timestampString = "525241014.047504"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -430,7 +350,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.381032"
+                  timestampString = "525241014.050584"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -445,7 +365,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.384037"
+                  timestampString = "525241014.053644"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -460,7 +380,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.387535"
+                  timestampString = "525241014.05671"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -493,7 +413,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.400688"
+                  timestampString = "525241014.066541"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -508,7 +428,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.403728"
+                  timestampString = "525241014.06997"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -523,7 +443,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.406811"
+                  timestampString = "525241014.073327"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -538,7 +458,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.410613"
+                  timestampString = "525241014.076727"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -571,7 +491,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.42258"
+                  timestampString = "525241014.08653"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -586,7 +506,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.425851"
+                  timestampString = "525241014.089672"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -601,7 +521,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.429328"
+                  timestampString = "525241014.092694"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -616,7 +536,7 @@
                   moduleName = "JFCinemaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
-                  timestampString = "525080505.432801"
+                  timestampString = "525241014.095702"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -638,8 +558,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "DescViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.timeLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.105407"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.timeLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.108525"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; JFCinemaApp.DescViewController"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.111611"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "449">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;JFCinemaApp.DescViewController&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.114797"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "347">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -654,8 +636,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "DescViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -670,8 +652,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "DescViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.timeLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.124852"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.timeLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.128131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; JFCinemaApp.DescViewController"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.131211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "449">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;JFCinemaApp.DescViewController&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.134311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "347">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -686,8 +730,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "DescViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.adultTickets.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.144704"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.adultTickets.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.147816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; JFCinemaApp.DescViewController"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.150978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JFCinemaApp.DescViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;JFCinemaApp.DescViewController&gt;"
+                  moduleName = "JFCinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameshuang/Documents/xcode-workshop/JFCinemaApp/JFCinemaApp/DescViewController.swift"
+                  timestampString = "525241014.154302"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

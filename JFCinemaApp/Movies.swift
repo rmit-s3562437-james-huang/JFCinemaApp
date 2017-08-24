@@ -29,7 +29,7 @@ enum Movies: Int {
             return nil
         }
     }
-        
+    
     var title: String
     {
         get
