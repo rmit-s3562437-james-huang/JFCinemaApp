@@ -22,34 +22,20 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     let model = generateRandomData()
-    let tuesday = generateRandomData()
+    
+    
     var storedOffsets = [Int: CGFloat]()
-    var id = ""
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        var day_count = 0
-        
-        switch (segmentedController.selectedSegmentIndex) {
-        case 0:
-            day_count = model.count
-            break
-        case 1:
-            day_count = tuesday.count
-            break
-        default:
-            break
-        }
-
-        return day_count
+        return model.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        //myTableView.tag = indexPath.row
-        
+
         return cell
     }
     
@@ -69,23 +55,23 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
         
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
+    
 }
 
 extension SessionTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model[collectionView.tag].count
+       
+        return 4
     }
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
-        let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        
-        
-        switch (segmentedController.selectedSegmentIndex) {
-        case 0:
             cell1.backgroundView = model[collectionView.tag][indexPath.item]
             
             cell1.tag = indexPath.item
@@ -97,38 +83,20 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
             cell1.layer.borderWidth = 1
             
             cell1.layer.cornerRadius = 8
-            break;
-        case 1:
-            cell2.backgroundView = tuesday[collectionView.tag][indexPath.item]
-            
-            cell2.tag = indexPath.item
-            
-            cell2.backgroundColor = UIColor.gray;
-            
-            cell2.layer.borderColor = UIColor.black.cgColor
-            
-            cell2.layer.borderWidth = 1
-            
-            cell2.layer.cornerRadius = 8
-            break;
-        default:
-            break;
-            
-        }
-        
+      
         return cell1
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
         
-        let descViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! DescViewController
+        let bookViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! BookViewController
         
-        descViewController.row = collectionView.tag
-        descViewController.path = indexPath
-        descViewController.content = (model[collectionView.tag][indexPath.item].titleLabel?.text)
-        
-        self.navigationController?.pushViewController(descViewController, animated: true)
+        bookViewController.row = collectionView.tag
+        bookViewController.path = indexPath
+        bookViewController.content = (model[collectionView.tag]           [indexPath.item].titleLabel?.text)
+
+        self.navigationController?.pushViewController(bookViewController, animated: true)
     }
     
 }

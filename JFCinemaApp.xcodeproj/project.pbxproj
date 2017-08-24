@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		8521960A1F4D633900A32C38 /* dunkirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196061F4D633900A32C38 /* dunkirk.jpg */; };
 		8521960B1F4D633900A32C38 /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196071F4D633900A32C38 /* minions.jpg */; };
 		8521960C1F4D633900A32C38 /* spiderman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196081F4D633900A32C38 /* spiderman.jpg */; };
 		8521960D1F4D633900A32C38 /* valerian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852196091F4D633900A32C38 /* valerian.jpg */; };
+=======
+		DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC076C471F4E93D300A9395F /* DescViewController.swift */; };
+>>>>>>> James
 		DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */; };
 		DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11531F4AAA8900BD9532 /* ViewController.swift */; };
 		DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11551F4AAA8900BD9532 /* Main.storyboard */; };
@@ -24,7 +28,7 @@
 		DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11851F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift */; };
 		DC4C11881F4ADF0900BD9532 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11871F4ADF0900BD9532 /* FeaturedViewController.swift */; };
 		DC4C118A1F4ADFB700BD9532 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11891F4ADFB700BD9532 /* helper.swift */; };
-		DC4C118C1F4ADFE400BD9532 /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C118B1F4ADFE400BD9532 /* DescViewController.swift */; };
+		DC4C118C1F4ADFE400BD9532 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C118B1F4ADFE400BD9532 /* BookViewController.swift */; };
 		DC4C11921F4AE0E400BD9532 /* dunkirk_backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C118E1F4AE0E400BD9532 /* dunkirk_backdrop.jpg */; };
 		DC4C11931F4AE0E400BD9532 /* minions_backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C118F1F4AE0E400BD9532 /* minions_backdrop.jpg */; };
 		DC4C11941F4AE0E400BD9532 /* spiderman_backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11901F4AE0E400BD9532 /* spiderman_backdrop.jpg */; };
@@ -52,10 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		852196061F4D633900A32C38 /* dunkirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk.jpg; sourceTree = "<group>"; };
 		852196071F4D633900A32C38 /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions.jpg; sourceTree = "<group>"; };
 		852196081F4D633900A32C38 /* spiderman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spiderman.jpg; sourceTree = "<group>"; };
 		852196091F4D633900A32C38 /* valerian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valerian.jpg; sourceTree = "<group>"; };
+=======
+		DC076C471F4E93D300A9395F /* DescViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
+>>>>>>> James
 		DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C11531F4AAA8900BD9532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +83,7 @@
 		DC4C11851F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC4C11871F4ADF0900BD9532 /* FeaturedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		DC4C11891F4ADFB700BD9532 /* helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
-		DC4C118B1F4ADFE400BD9532 /* DescViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
+		DC4C118B1F4ADFE400BD9532 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		DC4C118E1F4AE0E400BD9532 /* dunkirk_backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk_backdrop.jpg; sourceTree = "<group>"; };
 		DC4C118F1F4AE0E400BD9532 /* minions_backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions_backdrop.jpg; sourceTree = "<group>"; };
 		DC4C11901F4AE0E400BD9532 /* spiderman_backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spiderman_backdrop.jpg; sourceTree = "<group>"; };
@@ -140,7 +148,8 @@
 				DC4C11831F4ADE6D00BD9532 /* SessionTableViewController.swift */,
 				DC4C11531F4AAA8900BD9532 /* ViewController.swift */,
 				DC4C117F1F4ADDEE00BD9532 /* ViewControllerTableViewCell.swift */,
-				DC4C118B1F4ADFE400BD9532 /* DescViewController.swift */,
+				DC4C118B1F4ADFE400BD9532 /* BookViewController.swift */,
+				DC076C471F4E93D300A9395F /* DescViewController.swift */,
 				DC4C11891F4ADFB700BD9532 /* helper.swift */,
 				DC4C11A91F4B2D4800BD9532 /* Movies.swift */,
 				DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */,
@@ -341,7 +350,7 @@
 			files = (
 				DC4C11821F4ADE3900BD9532 /* SessionTableViewCell.swift in Sources */,
 				DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */,
-				DC4C118C1F4ADFE400BD9532 /* DescViewController.swift in Sources */,
+				DC4C118C1F4ADFE400BD9532 /* BookViewController.swift in Sources */,
 				DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */,
 				DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */,
 				DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */,
@@ -351,6 +360,7 @@
 				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
 				DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */,
 				DC4C118A1F4ADFB700BD9532 /* helper.swift in Sources */,
+				DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
