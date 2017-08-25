@@ -15,6 +15,12 @@ class BookViewController: UIViewController {
     var row: Int!
     var path: IndexPath!
     var content: String!
+    
+    var childTicket: Int = 0
+    var concessionTicket: Int = 0
+    var adultTicket: Int = 0
+    
+    var myTicket: Ticket?
 
     @IBOutlet weak var childTickets: UILabel!
     @IBOutlet weak var concessionTickets: UILabel!
@@ -37,20 +43,34 @@ class BookViewController: UIViewController {
     
     // Stepper funcs
     @IBAction func childStepper(_ sender: UIStepper) {
-        let intChildTickets:Int = Int(sender.value)
-        childTickets.text = String(intChildTickets)
+        childTicket = Int(sender.value)
+        childTickets.text = String(childTicket)
     }
     
     @IBAction func concessionStepper(_ sender: UIStepper) {
-        let intChildTickets:Int = Int(sender.value)
-        concessionTickets.text = String(intChildTickets)
+        concessionTicket = Int(sender.value)
+        concessionTickets.text = String(concessionTicket)
     }
 
-    
     @IBAction func adultStepper(_ sender: UIStepper) {
-        let intChildTickets:Int = Int(sender.value)
-        adultTickets.text = String(intChildTickets)
+        adultTicket = Int(sender.value)
+        adultTickets.text = String(adultTicket)
     }
     
+    // Segue to tickets
+    
+    @IBAction func confirmTicket(_ sender: UIButton) {
+        
+        myTicket = Ticket(title: movieTitle, sess: content, child: childTicket, concess: concessionTicket, adult: adultTicket)
+        Singleton.getInstance.tickets.append(myTicket!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "bookToTicket" {
+            if let ticketVC = segue.destination as? TicketTableViewController{
+                ticketVC.ticket = myTicket
+            }
+        }
+    }
     
 }

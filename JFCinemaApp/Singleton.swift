@@ -11,6 +11,7 @@ import UIKit
 class Singleton {
     
     var movieList: MovieList
+    var tickets: [Ticket] = []
     
     init() {
         movieList = MovieList()
