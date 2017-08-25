@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		850ED5051F50014700A983EE /* ContactTableViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ED5041F50014700A983EE /* ContactTableViewControllerCell.swift */; };
-		850ED5071F5001A700A983EE /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ED5061F5001A700A983EE /* ContactViewController.swift */; };
 		855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D151F4FC95F00A1FE1A /* TicketTableViewCell.swift */; };
 		855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D171F4FC97400A1FE1A /* TicketTableViewController.swift */; };
 		855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */; };
@@ -18,6 +16,7 @@
 		85F698F51F4E9EC0009DA1D4 /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F11F4E9EC0009DA1D4 /* minions.jpg */; };
 		85F698FD1F4EB2EC009DA1D4 /* splash_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 85F698FC1F4EB2EC009DA1D4 /* splash_image.png */; };
 		DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC076C471F4E93D300A9395F /* DescViewController.swift */; };
+		DC0C87191F502ACA00140858 /* contactsImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0C87181F502ACA00140858 /* contactsImage.png */; };
 		DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */; };
 		DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11531F4AAA8900BD9532 /* ViewController.swift */; };
 		DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11551F4AAA8900BD9532 /* Main.storyboard */; };
@@ -59,8 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		850ED5041F50014700A983EE /* ContactTableViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewControllerCell.swift; sourceTree = "<group>"; };
-		850ED5061F5001A700A983EE /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		855D5D151F4FC95F00A1FE1A /* TicketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		855D5D171F4FC97400A1FE1A /* TicketTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewController.swift; sourceTree = "<group>"; };
 		855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
@@ -70,6 +67,7 @@
 		85F698F11F4E9EC0009DA1D4 /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions.jpg; sourceTree = "<group>"; };
 		85F698FC1F4EB2EC009DA1D4 /* splash_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_image.png; sourceTree = "<group>"; };
 		DC076C471F4E93D300A9395F /* DescViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
+		DC0C87181F502ACA00140858 /* contactsImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactsImage.png; sourceTree = "<group>"; };
 		DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C11531F4AAA8900BD9532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,10 +162,9 @@
 				DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */,
 				855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */,
 				DC4C11551F4AAA8900BD9532 /* Main.storyboard */,
-				850ED5041F50014700A983EE /* ContactTableViewControllerCell.swift */,
-				850ED5061F5001A700A983EE /* ContactViewController.swift */,
 				DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */,
 				DC4C115D1F4AAA8900BD9532 /* Info.plist */,
+				DC0C87181F502ACA00140858 /* contactsImage.png */,
 				85F698FC1F4EB2EC009DA1D4 /* splash_image.png */,
 				DC4C11581F4AAA8900BD9532 /* Assets.xcassets */,
 				DC4C11961F4AE12400BD9532 /* SessionImages */,
@@ -333,6 +330,7 @@
 				DC4C11941F4AE0E400BD9532 /* spiderman_backdrop.jpg in Resources */,
 				DC4C11591F4AAA8900BD9532 /* Assets.xcassets in Resources */,
 				85F698F31F4E9EC0009DA1D4 /* valerian.jpg in Resources */,
+				DC0C87191F502ACA00140858 /* contactsImage.png in Resources */,
 				DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */,
 				85F698F41F4E9EC0009DA1D4 /* dunkirk.jpg in Resources */,
 				85F698F51F4E9EC0009DA1D4 /* minions.jpg in Resources */,
@@ -369,13 +367,11 @@
 				DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */,
 				DC4C11881F4ADF0900BD9532 /* FeaturedViewController.swift in Sources */,
 				855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */,
-				850ED5051F50014700A983EE /* ContactTableViewControllerCell.swift in Sources */,
 				DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */,
 				DC4C11841F4ADE6D00BD9532 /* SessionTableViewController.swift in Sources */,
 				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
 				855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */,
 				DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */,
-				850ED5071F5001A700A983EE /* ContactViewController.swift in Sources */,
 				855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */,
 				DC4C118A1F4ADFB700BD9532 /* helper.swift in Sources */,
 				DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */,
