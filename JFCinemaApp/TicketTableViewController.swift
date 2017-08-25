@@ -31,8 +31,9 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return modelTicket.count
     }
-
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ticketCell", for: indexPath) as! TicketTableViewCell
         
         let newTicket: Ticket = modelTicket[indexPath.item]
@@ -46,5 +47,4 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
         
         return cell
     }
-
 }

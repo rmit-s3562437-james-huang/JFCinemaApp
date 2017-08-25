@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UwH-Xn-Eg6">
-                                <rect key="frame" x="47" y="82" width="321" height="29"/>
+                                <rect key="frame" x="47" y="112" width="321" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="321" id="4IS-Sc-nnw"/>
                                     <constraint firstAttribute="height" constant="28" id="Ujr-bZ-FHy"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BPW-IJ-qcX">
-                                <rect key="frame" x="0.0" y="132" width="414" height="555"/>
+                                <rect key="frame" x="0.0" y="162" width="414" height="525"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="122" id="0qF-eB-LSu" customClass="SessionTableViewCell" customModule="JFCinemaApp" customModuleProvider="target">
@@ -605,7 +605,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="confirmTicket:" destination="yrx-Wl-lOm" eventType="touchUpInside" id="vOu-Bp-obf"/>
-                                    <segue destination="JTo-b8-Mpt" kind="show" identifier="bookToTicket" id="xBN-Br-y12"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hui-t2-Wy2">
@@ -851,45 +850,7 @@
                     <view key="view" contentMode="scaleToFill" id="L0Z-9m-jrP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-kQ-zPx">
-                                <rect key="frame" x="0.0" y="154" width="414" height="217"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="217" id="b92-os-HxQ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James &amp; Forest Cinemas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-z3-yMC">
-                                <rect key="frame" x="112" y="428" width="190" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: +30404020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rG-za-1Dx">
-                                <rect key="frame" x="132" y="476" width="151" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: 245 Drive St" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-r8-dUP">
-                                <rect key="frame" x="122" y="521" width="170" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7rG-za-1Dx" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="112" id="FRb-A8-vom"/>
-                            <constraint firstItem="sDi-z3-yMC" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="92" id="GhX-7z-GS1"/>
-                            <constraint firstItem="PjN-kQ-zPx" firstAttribute="centerX" secondItem="L0Z-9m-jrP" secondAttribute="centerX" id="L3c-tr-lqr"/>
-                            <constraint firstItem="7rG-za-1Dx" firstAttribute="top" secondItem="sDi-z3-yMC" secondAttribute="bottom" constant="27" id="RYv-UL-1CK"/>
-                            <constraint firstItem="OtH-r8-dUP" firstAttribute="top" secondItem="7rG-za-1Dx" secondAttribute="bottom" constant="24" id="VGC-tM-qED"/>
-                            <constraint firstItem="OtH-r8-dUP" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="102" id="VP7-p0-xOO"/>
-                            <constraint firstItem="PjN-kQ-zPx" firstAttribute="top" secondItem="yBz-Lb-CsP" secondAttribute="bottom" constant="60" id="ZJD-ta-oxy"/>
-                            <constraint firstItem="PjN-kQ-zPx" firstAttribute="width" secondItem="L0Z-9m-jrP" secondAttribute="width" id="dWA-hm-2su"/>
-                            <constraint firstItem="PjN-kQ-zPx" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="-20" id="hKh-Wr-21s"/>
-                            <constraint firstItem="sDi-z3-yMC" firstAttribute="top" secondItem="PjN-kQ-zPx" secondAttribute="bottom" constant="57" id="s4E-cx-Kru"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact" id="dmy-CC-wA1"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
@@ -901,7 +862,7 @@
         <!--My Tickets-->
         <scene sceneID="XDN-nv-5NB">
             <objects>
-                <viewController title="My Tickets" id="JTo-b8-Mpt" customClass="TicketTableViewController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="My Tickets" title="My Tickets" id="JTo-b8-Mpt" customClass="TicketTableViewController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rAi-bV-nC8"/>
                         <viewControllerLayoutGuide type="bottom" id="dME-0S-J3D"/>
@@ -973,7 +934,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adult:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76z-fL-Ort">
-                                                    <rect key="frame" x="76" y="129" width="45" height="20.333333333333343"/>
+                                                    <rect key="frame" x="76" y="129" width="45" height="20.666666666666657"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20.333333333333314" id="hSi-SX-VTA"/>
                                                         <constraint firstAttribute="width" constant="45" id="jzK-YS-2Fq"/>
@@ -1198,7 +1159,7 @@
                                 </constraints>
                                 <state key="normal" title="Book now!"/>
                                 <connections>
-                                    <segue destination="glR-C9-bfi" kind="show" id="ULh-wb-UU5"/>
+                                    <action selector="moveToSessions:" destination="8cX-oF-fG1" eventType="touchUpInside" id="uQM-qC-FBx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHK-ar-9lp">
@@ -1300,13 +1261,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEu-ef-oxz">
-                                                    <rect key="frame" x="10" y="0.0" width="395" height="185"/>
+                                                    <rect key="frame" x="10" y="0.0" width="395" height="185.33333333333334"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="jEu-ef-oxz" secondAttribute="height" multiplier="79:37" id="bpU-dS-It3"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkq-PS-IRr">
-                                                    <rect key="frame" x="10" y="193" width="395" height="21"/>
+                                                    <rect key="frame" x="10" y="193.33333333333337" width="395" height="20.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1477,15 +1438,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="contactsImage.png" width="907" height="884"/>
         <image name="icons8-Clock-25" width="25" height="25"/>
         <image name="icons8-Home-25" width="25" height="25"/>
         <image name="icons8-Info-25" width="25" height="25"/>
         <image name="icons8-Movie-25" width="25" height="25"/>
         <image name="icons8-Starred Ticket-25" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ULh-wb-UU5"/>
-        <segue reference="xBN-Br-y12"/>
-    </inferredMetricsTieBreakers>
 </document>

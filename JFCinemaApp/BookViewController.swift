@@ -9,7 +9,7 @@
 
 import UIKit
 
-class BookViewController: UIViewController {
+class BookViewController: UIViewController, UITabBarControllerDelegate {
     
     var movieTitle: String!
     var row: Int!
@@ -33,7 +33,6 @@ class BookViewController: UIViewController {
         print("Collection view at row \(row!) selected index path \(path!)")
         self.myHeading.text = movieTitle!
         self.timeLabel.text = content!
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,20 +56,13 @@ class BookViewController: UIViewController {
         adultTickets.text = String(adultTicket)
     }
     
-    // Segue to tickets
-    
     @IBAction func confirmTicket(_ sender: UIButton) {
         
         myTicket = Ticket(title: movieTitle, sess: content, child: childTicket, concess: concessionTicket, adult: adultTicket)
         Singleton.getInstance.tickets.append(myTicket!)
-    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "bookToTicket" {
-            if let ticketVC = segue.destination as? TicketTableViewController{
-                ticketVC.ticket = myTicket
-            }
-        }
+        tabBarController?.selectedIndex = 3
+
     }
     
 }
