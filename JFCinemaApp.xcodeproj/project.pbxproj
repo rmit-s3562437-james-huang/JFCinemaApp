@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		850ED5051F50014700A983EE /* ContactTableViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ED5041F50014700A983EE /* ContactTableViewControllerCell.swift */; };
-		850ED5071F5001A700A983EE /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ED5061F5001A700A983EE /* ContactViewController.swift */; };
 		855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D151F4FC95F00A1FE1A /* TicketTableViewCell.swift */; };
 		855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D171F4FC97400A1FE1A /* TicketTableViewController.swift */; };
 		855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */; };
@@ -59,8 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		850ED5041F50014700A983EE /* ContactTableViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewControllerCell.swift; sourceTree = "<group>"; };
-		850ED5061F5001A700A983EE /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		855D5D151F4FC95F00A1FE1A /* TicketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		855D5D171F4FC97400A1FE1A /* TicketTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewController.swift; sourceTree = "<group>"; };
 		855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
@@ -164,8 +160,6 @@
 				DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */,
 				855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */,
 				DC4C11551F4AAA8900BD9532 /* Main.storyboard */,
-				850ED5041F50014700A983EE /* ContactTableViewControllerCell.swift */,
-				850ED5061F5001A700A983EE /* ContactViewController.swift */,
 				DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */,
 				DC4C115D1F4AAA8900BD9532 /* Info.plist */,
 				85F698FC1F4EB2EC009DA1D4 /* splash_image.png */,
@@ -369,13 +363,11 @@
 				DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */,
 				DC4C11881F4ADF0900BD9532 /* FeaturedViewController.swift in Sources */,
 				855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */,
-				850ED5051F50014700A983EE /* ContactTableViewControllerCell.swift in Sources */,
 				DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */,
 				DC4C11841F4ADE6D00BD9532 /* SessionTableViewController.swift in Sources */,
 				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
 				855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */,
 				DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */,
-				850ED5071F5001A700A983EE /* ContactViewController.swift in Sources */,
 				855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */,
 				DC4C118A1F4ADFB700BD9532 /* helper.swift in Sources */,
 				DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */,
