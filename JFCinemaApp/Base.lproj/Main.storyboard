@@ -850,7 +850,57 @@
                     <view key="view" contentMode="scaleToFill" id="L0Z-9m-jrP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="pNM-Th-bTN">
+                                <rect key="frame" x="71" y="148" width="272" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="Z4t-Lr-1LD"/>
+                                    <constraint firstAttribute="width" constant="272" id="ZeL-TZ-rOC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James &amp; Forest Cinemas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-Xl-jol">
+                                <rect key="frame" x="112" y="397" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qol-Ti-bcm"/>
+                                    <constraint firstAttribute="width" constant="190" id="i5F-h8-Tu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: +4389502239" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e14-AA-wmI">
+                                <rect key="frame" x="122" y="448" width="171" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="3R8-Ri-Kev"/>
+                                    <constraint firstAttribute="height" constant="21" id="V4F-EB-zrW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address: 234 Drive St" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-Qd-a8A">
+                                <rect key="frame" x="123" y="501" width="168" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XKX-HL-OaM"/>
+                                    <constraint firstAttribute="width" constant="168" id="adq-wi-z7T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e14-AA-wmI" firstAttribute="top" secondItem="qT4-Xl-jol" secondAttribute="bottom" constant="30" id="2wd-gF-dB8"/>
+                            <constraint firstItem="qT4-Xl-jol" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="92" id="86G-OI-Q0R"/>
+                            <constraint firstItem="qT4-Xl-jol" firstAttribute="top" secondItem="pNM-Th-bTN" secondAttribute="bottom" constant="47" id="Ae7-nw-hng"/>
+                            <constraint firstItem="Z3z-Qd-a8A" firstAttribute="top" secondItem="e14-AA-wmI" secondAttribute="bottom" constant="32" id="FMt-t1-lak"/>
+                            <constraint firstItem="pNM-Th-bTN" firstAttribute="centerX" secondItem="L0Z-9m-jrP" secondAttribute="centerX" id="QAg-A4-nuc"/>
+                            <constraint firstItem="pNM-Th-bTN" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="51" id="aoB-Ub-51q"/>
+                            <constraint firstItem="pNM-Th-bTN" firstAttribute="top" secondItem="yBz-Lb-CsP" secondAttribute="bottom" constant="54" id="dvE-di-MZD"/>
+                            <constraint firstItem="e14-AA-wmI" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="102" id="tO4-YV-bz5"/>
+                            <constraint firstItem="Z3z-Qd-a8A" firstAttribute="leading" secondItem="L0Z-9m-jrP" secondAttribute="leadingMargin" constant="103" id="v78-Ot-yc9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact" id="dmy-CC-wA1"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
@@ -1438,6 +1488,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="contactsImage.png" width="907" height="884"/>
         <image name="icons8-Clock-25" width="25" height="25"/>
         <image name="icons8-Home-25" width="25" height="25"/>
         <image name="icons8-Info-25" width="25" height="25"/>
