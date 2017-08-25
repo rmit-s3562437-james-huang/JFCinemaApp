@@ -19,10 +19,12 @@ class DescViewController: UIViewController {
     @IBOutlet weak var classDesc: UILabel!
     @IBOutlet weak var contentDesc: UITextView!
     
-    
-    
     override func viewDidLoad() {
         self.myTitle.text = selected!
     }
     
+    // Go to sessions
+    @IBAction func moveToSessions(_ sender: Any) {
+        tabBarController?.selectedIndex = 1
+    }
 }
