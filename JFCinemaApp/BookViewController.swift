@@ -63,7 +63,8 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
         
         myTicket = Ticket(title: movieTitle, sess: content, child: childTicket, concess: concessionTicket, adult: adultTicket)
         Singleton.getInstance.tickets.append(myTicket)
-    
+        _ = navigationController?.popToRootViewController(animated: true)
+
         tabBarController?.selectedIndex = 3
         
     }
