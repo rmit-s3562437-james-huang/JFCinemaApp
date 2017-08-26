@@ -12,31 +12,36 @@ import Foundation
 class TicketTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var myTableView: UITableView!
+
+    var modelTicket: [Ticket]?
     
-    var ticket: Ticket!
-    var myString: String!
-    var modelTicket = Singleton.getInstance.tickets
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.myTableView.separatorStyle = UITableViewCellSeparatorStyle.none
-    }
-    
+//    override func viewWillAppear(_ animated: Bool) {
+//        modelTicket = Singleton.getInstance.tickets
+//    }
     @IBOutlet weak var myTicket: UITableView!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        modelTicket = Singleton.getInstance.tickets
+        myTableView.reloadData()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        modelTicket = Singleton.getInstance.tickets
+        myTableView.reloadData()
+    }
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return modelTicket.count
+        print(modelTicket!.count)
+        return modelTicket!.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ticketCell", for: indexPath) as! TicketTableViewCell
         
-        let newTicket: Ticket = modelTicket[indexPath.item]
+        let newTicket: Ticket = modelTicket![indexPath.item]
         
         cell.movieTitle.text = newTicket.movieName
         cell.movieSession.text = newTicket.session
@@ -47,4 +52,7 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
         
         return cell
     }
+    
+    
+    
 }

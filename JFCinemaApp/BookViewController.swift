@@ -20,7 +20,9 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
     var concessionTicket: Int = 0
     var adultTicket: Int = 0
     
-    var myTicket: Ticket?
+    var viewController: UIViewController?
+    
+    var myTicket = Ticket()
 
     @IBOutlet weak var childTickets: UILabel!
     @IBOutlet weak var concessionTickets: UILabel!
@@ -33,6 +35,7 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
         print("Collection view at row \(row!) selected index path \(path!)")
         self.myHeading.text = movieTitle!
         self.timeLabel.text = content!
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,10 +62,10 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
     @IBAction func confirmTicket(_ sender: UIButton) {
         
         myTicket = Ticket(title: movieTitle, sess: content, child: childTicket, concess: concessionTicket, adult: adultTicket)
-        Singleton.getInstance.tickets.append(myTicket!)
+        Singleton.getInstance.tickets.append(myTicket)
     
         tabBarController?.selectedIndex = 3
-
+        
     }
-    
+ 
 }

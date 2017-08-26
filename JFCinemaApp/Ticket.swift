@@ -22,6 +22,10 @@ struct Ticket {
     
     var totalPrice: Double!
     
+    init() {
+        
+    }
+    
     init(title:String!, sess: String!, child: Int!, concess: Int!, adult: Int!) {
         movieName = title
         session = sess

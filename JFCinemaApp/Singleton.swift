@@ -8,13 +8,15 @@
 
 import UIKit
 
-class Singleton {
+final class Singleton {
     
     var movieList: MovieList
     var tickets: [Ticket] = []
-    
-    init() {
+    var ticket: Ticket
+    private init() {
         movieList = MovieList()
+        ticket = Ticket()
+
     }
     
     private struct Static {

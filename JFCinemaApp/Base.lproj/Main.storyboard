@@ -1082,7 +1082,7 @@
                     <navigationItem key="navigationItem" title="Tickets" id="Wa6-Nk-0FE"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="myTableView" destination="QtK-5I-V2j" id="94z-s5-RIh"/>
+                        <outlet property="myTableView" destination="jrA-3b-Gte" id="Hc7-Bm-Yui"/>
                         <outlet property="myTicket" destination="jrA-3b-Gte" id="yMg-Ag-fZG"/>
                     </connections>
                 </viewController>
@@ -1367,7 +1367,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kEM-Gj-VcM">
             <objects>
-                <tabBarController id="8fa-yR-cUF" sceneMemberID="viewController">
+                <tabBarController id="8fa-yR-cUF" customClass="TabBarController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="o4c-Ip-ha6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
