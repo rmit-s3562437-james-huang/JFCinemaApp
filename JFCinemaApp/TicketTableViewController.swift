@@ -22,6 +22,8 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.myTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+
         modelTicket = Singleton.getInstance.tickets
         myTableView.reloadData()
     }

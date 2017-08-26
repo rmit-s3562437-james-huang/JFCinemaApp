@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8fa-yR-cUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8fa-yR-cUF">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1307,7 +1307,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="223"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xqI-Pc-sGV" id="Uab-rm-YZq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEu-ef-oxz">
@@ -1390,7 +1390,7 @@
         <scene sceneID="Nut-SQ-jim">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMO-i0-jti" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="icons8-Home-25" id="yux-3V-UDG"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tab_home" id="yux-3V-UDG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ONS-8Y-LQs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1410,7 +1410,7 @@
         <scene sceneID="u16-y6-IPo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4LV-91-XDH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sessions" image="icons8-Clock-25" id="wOh-3c-rCt"/>
+                    <tabBarItem key="tabBarItem" title="Sessions" image="tab_session" id="wOh-3c-rCt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cY6-yY-gl7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1430,7 +1430,7 @@
         <scene sceneID="SPu-6f-ump">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a1h-i9-uBj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movies" image="icons8-Movie-25" id="LGP-pn-9pV"/>
+                    <tabBarItem key="tabBarItem" title="Movies" image="tab_movies" id="LGP-pn-9pV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IUz-kD-GVD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1450,7 +1450,7 @@
         <scene sceneID="e7W-AU-pLV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UoC-Kf-DiD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" image="icons8-Info-25" id="4SH-mf-dyt"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="tab_contact" id="4SH-mf-dyt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWZ-ym-3MA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1470,7 +1470,7 @@
         <scene sceneID="KEg-t2-aeC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPX-Pf-Npe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tickets" image="icons8-Starred Ticket-25" id="123-Jl-CzZ"/>
+                    <tabBarItem key="tabBarItem" title="Tickets" image="tab_my tickets" id="123-Jl-CzZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bnK-VJ-0nT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1489,10 +1489,10 @@
     </scenes>
     <resources>
         <image name="contactsImage.png" width="907" height="884"/>
-        <image name="icons8-Clock-25" width="25" height="25"/>
-        <image name="icons8-Home-25" width="25" height="25"/>
-        <image name="icons8-Info-25" width="25" height="25"/>
-        <image name="icons8-Movie-25" width="25" height="25"/>
-        <image name="icons8-Starred Ticket-25" width="25" height="25"/>
+        <image name="tab_contact" width="25" height="25"/>
+        <image name="tab_home" width="25" height="25"/>
+        <image name="tab_movies" width="25" height="25"/>
+        <image name="tab_my tickets" width="25" height="25"/>
+        <image name="tab_session" width="25" height="25"/>
     </resources>
 </document>
