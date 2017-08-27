@@ -10,7 +10,7 @@ import UIKit
 
 class DescViewController: UIViewController {
 
-    var selected: String!
+    var selected: Movies!
     
     @IBOutlet weak var myTitle: UILabel!
     @IBOutlet weak var myImage: UIImageView!
@@ -20,7 +20,11 @@ class DescViewController: UIViewController {
     @IBOutlet weak var contentDesc: UITextView!
     
     override func viewDidLoad() {
-        self.myTitle.text = selected!
+        self.myTitle.text = selected.title
+        self.myImage.image = selected.backdrop
+        self.rating.text = selected.userRating
+        self.classDesc.text = selected.classification
+        self.contentDesc.text = selected.description
     }
     
     // Go to sessions

@@ -10,12 +10,12 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var mainController: UITableView!
     
     var model = Singleton.getInstance.movieList.naturalOrder()
     
-    var selected = ""
+    var selected: Movies?
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.count
@@ -32,19 +32,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
         let movie: Movies = model[indexPath.item]
-        
+        cell.layoutIfNeeded()
         cell.myImage.image = movie.backdrop
         cell.myLabel.text = movie.title
-        
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.black
-        cell.selectedBackgroundView = backgroundView
-        
+        cell.myImage.layer.cornerRadius = 8
+        cell.myImage.layer.masksToBounds = true
+        cell.layer.cornerRadius = 8
+   
         return cell
     }
     
     public func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        selected = model[indexPath.item].title
+        selected = model[indexPath.item]
         performSegue(withIdentifier: "viewToDesc", sender: selected)
     }
     
@@ -56,3 +55,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 }
+

@@ -15,6 +15,7 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         self.myTableView.allowsSelection = false
+        self.myTableView.separatorStyle = UITableViewCellSeparatorStyle.none
     }
     
     @IBAction func refreshButtonTapped(sender: AnyObject) {
@@ -85,13 +86,13 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
             
             cell1.tag = indexPath.item
             
-            cell1.backgroundColor = UIColor.gray;
+            cell1.backgroundColor = UIColor.darkGray;
             
-            cell1.layer.borderColor = UIColor.black.cgColor
+            cell1.layer.borderColor = UIColor.darkGray.cgColor
             
             cell1.layer.borderWidth = 1
             
-            cell1.layer.cornerRadius = 8
+            cell1.layer.cornerRadius = 4
       
         return cell1
     }
