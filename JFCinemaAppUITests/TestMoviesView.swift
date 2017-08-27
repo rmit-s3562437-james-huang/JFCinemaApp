@@ -9,24 +9,28 @@
 import XCTest
 
 class TestMoviesView: XCTestCase {
-        
+    
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
     }
-
-    // Before
-    let app = XCUIApplication()
     
     override func tearDown() {
         super.tearDown()
     }
     
+    // Before
+    let app = XCUIApplication()
+    
     func testCollectionViewCells(){
         app.tabBars.buttons["Movies"].tap()
         let cells = app.collectionViews.cells.count
         XCTAssertEqual(cells, 3)
+    }
+    
+    func testHomeTabExists() {
+        app.tabBars.buttons["Home"].tap()
     }
     
     func testSessionsTabExists() {

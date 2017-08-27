@@ -1,43 +1,41 @@
 //
-//  TestMainMenu.swift
+//  TestTicketsView.swift
 //  JFCinemaApp
 //
 //  Created by Forest Xiang on 27/8/17.
 //  Copyright © 2017 James Huang. All rights reserved.
 //
+
 import XCTest
 
-class TestMainView: XCTestCase {
-    
+class TestTicketsView: XCTestCase {
+        
     override func setUp() {
         super.setUp()
+        
+        continueAfterFailure = false
+
         XCUIApplication().launch()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+
         super.tearDown()
     }
     
     // Before
     let app = XCUIApplication()
     
-    func testNumButtons() {
-        
-        let numButtons = app.buttons.count
-        
-        XCTAssertEqual(numButtons, 5)
+    func testEmptyTable() {
+        app.tabBars.buttons["Sessions"].tap()
+        let btnCount = app.buttons.count
+        XCTAssertEqual(btnCount, 28)
     }
     
-    func testNumTables() {
-        let tableCount = app.tables.count
-        XCTAssertEqual(tableCount, 1)
-    }
-    
-    func testTableCells() {
-        let tablesQuery = app.tables
-        let cells = tablesQuery.cells.count
-        XCTAssert(cells == 4)
+    func testTableRows() {
+            let tablesQuery = app.tables
+            let cells = tablesQuery.cells.count
+            XCTAssert(cells == 4)
     }
     
     func testHomeTabExists() {
@@ -59,5 +57,4 @@ class TestMainView: XCTestCase {
     func testContactsTabExists() {
         app.tabBars.buttons["Contact"].tap()
     }
-    
 }
