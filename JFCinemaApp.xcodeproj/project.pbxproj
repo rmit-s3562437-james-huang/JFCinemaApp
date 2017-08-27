@@ -15,13 +15,16 @@
 		85F698F41F4E9EC0009DA1D4 /* dunkirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */; };
 		85F698F51F4E9EC0009DA1D4 /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F11F4E9EC0009DA1D4 /* minions.jpg */; };
 		DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC076C471F4E93D300A9395F /* DescViewController.swift */; };
+		DC0E030B1F52A54B001FA916 /* TestMainContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03071F52A54B001FA916 /* TestMainContactsView.swift */; };
+		DC0E030C1F52A54B001FA916 /* TestMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03081F52A54B001FA916 /* TestMainView.swift */; };
+		DC0E030D1F52A54B001FA916 /* TestMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03091F52A54B001FA916 /* TestMoviesView.swift */; };
+		DC0E030E1F52A54B001FA916 /* TestTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E030A1F52A54B001FA916 /* TestTicketsView.swift */; };
 		DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */; };
 		DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11531F4AAA8900BD9532 /* ViewController.swift */; };
 		DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11551F4AAA8900BD9532 /* Main.storyboard */; };
 		DC4C11591F4AAA8900BD9532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11581F4AAA8900BD9532 /* Assets.xcassets */; };
 		DC4C115C1F4AAA8900BD9532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C115A1F4AAA8900BD9532 /* LaunchScreen.storyboard */; };
 		DC4C11671F4AAA8900BD9532 /* JFCinemaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */; };
-		DC4C11721F4AAA8900BD9532 /* JFCinemaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11711F4AAA8900BD9532 /* JFCinemaAppUITests.swift */; };
 		DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C117F1F4ADDEE00BD9532 /* ViewControllerTableViewCell.swift */; };
 		DC4C11821F4ADE3900BD9532 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11811F4ADE3900BD9532 /* SessionTableViewCell.swift */; };
 		DC4C11841F4ADE6D00BD9532 /* SessionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11831F4ADE6D00BD9532 /* SessionTableViewController.swift */; };
@@ -64,6 +67,10 @@
 		85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk.jpg; sourceTree = "<group>"; };
 		85F698F11F4E9EC0009DA1D4 /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions.jpg; sourceTree = "<group>"; };
 		DC076C471F4E93D300A9395F /* DescViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
+		DC0E03071F52A54B001FA916 /* TestMainContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainContactsView.swift; sourceTree = "<group>"; };
+		DC0E03081F52A54B001FA916 /* TestMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainView.swift; sourceTree = "<group>"; };
+		DC0E03091F52A54B001FA916 /* TestMoviesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMoviesView.swift; sourceTree = "<group>"; };
+		DC0E030A1F52A54B001FA916 /* TestTicketsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTicketsView.swift; sourceTree = "<group>"; };
 		DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C11531F4AAA8900BD9532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +82,6 @@
 		DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCinemaAppTests.swift; sourceTree = "<group>"; };
 		DC4C11681F4AAA8900BD9532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4C116D1F4AAA8900BD9532 /* JFCinemaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFCinemaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4C11711F4AAA8900BD9532 /* JFCinemaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCinemaAppUITests.swift; sourceTree = "<group>"; };
 		DC4C11731F4AAA8900BD9532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4C117F1F4ADDEE00BD9532 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		DC4C11811F4ADE3900BD9532 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
@@ -179,7 +185,10 @@
 		DC4C11701F4AAA8900BD9532 /* JFCinemaAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DC4C11711F4AAA8900BD9532 /* JFCinemaAppUITests.swift */,
+				DC0E03071F52A54B001FA916 /* TestMainContactsView.swift */,
+				DC0E03081F52A54B001FA916 /* TestMainView.swift */,
+				DC0E03091F52A54B001FA916 /* TestMoviesView.swift */,
+				DC0E030A1F52A54B001FA916 /* TestTicketsView.swift */,
 				DC4C11731F4AAA8900BD9532 /* Info.plist */,
 			);
 			path = JFCinemaAppUITests;
@@ -286,6 +295,7 @@
 					};
 					DC4C116C1F4AAA8900BD9532 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DC4C114D1F4AAA8900BD9532;
 					};
@@ -382,7 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4C11721F4AAA8900BD9532 /* JFCinemaAppUITests.swift in Sources */,
+				DC0E030D1F52A54B001FA916 /* TestMoviesView.swift in Sources */,
+				DC0E030B1F52A54B001FA916 /* TestMainContactsView.swift in Sources */,
+				DC0E030E1F52A54B001FA916 /* TestTicketsView.swift in Sources */,
+				DC0E030C1F52A54B001FA916 /* TestMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,10 +585,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JFCinemaAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JFCinemaAppUITests/JFCinemaAppUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = JFCinemaApp;
 			};
@@ -585,10 +601,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JFCinemaAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jameshuang.JFCinemaAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JFCinemaAppUITests/JFCinemaAppUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = JFCinemaApp;
 			};
