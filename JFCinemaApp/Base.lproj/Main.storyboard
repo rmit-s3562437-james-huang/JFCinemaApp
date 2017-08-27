@@ -1368,7 +1368,7 @@
                             <constraint firstItem="5wr-wE-dtD" firstAttribute="top" secondItem="VhA-we-sA7" secondAttribute="bottom" constant="-59" id="o0m-pA-KF9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" prompt="" id="BiD-RC-5Hp"/>
+                    <navigationItem key="navigationItem" title="JFCinemas Now Showing!" prompt="" id="BiD-RC-5Hp" colorLabel="IBBuiltInLabel-Gray"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mainController" destination="5wr-wE-dtD" id="8ee-k5-rxV"/>
@@ -1378,15 +1378,16 @@
             </objects>
             <point key="canvasLocation" x="1506" y="-730"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--JFCinemas-->
         <scene sceneID="kEM-Gj-VcM">
             <objects>
-                <tabBarController id="8fa-yR-cUF" customClass="TabBarController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="JFCinemas" id="8fa-yR-cUF" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="o4c-Ip-ha6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.16883902249999999" green="0.39365080000000002" blue="0.2157567292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="dMO-i0-jti" kind="relationship" relationship="viewControllers" id="TAS-vF-HNE"/>
@@ -1403,7 +1404,7 @@
         <!--Home-->
         <scene sceneID="Nut-SQ-jim">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMO-i0-jti" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMO-i0-jti" customClass="NavigationController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="tab_home" id="yux-3V-UDG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ONS-8Y-LQs">
@@ -1423,7 +1424,7 @@
         <!--Sessions-->
         <scene sceneID="u16-y6-IPo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4LV-91-XDH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4LV-91-XDH" customClass="NavigationController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sessions" image="tab_session" id="wOh-3c-rCt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cY6-yY-gl7">
@@ -1443,7 +1444,7 @@
         <!--Movies-->
         <scene sceneID="SPu-6f-ump">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a1h-i9-uBj" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a1h-i9-uBj" customClass="NavigationController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Movies" image="tab_movies" id="LGP-pn-9pV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IUz-kD-GVD">
@@ -1463,7 +1464,7 @@
         <!--Contact-->
         <scene sceneID="e7W-AU-pLV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UoC-Kf-DiD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UoC-Kf-DiD" customClass="NavigationController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contact" image="tab_contact" id="4SH-mf-dyt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWZ-ym-3MA">
@@ -1483,7 +1484,7 @@
         <!--Tickets-->
         <scene sceneID="KEg-t2-aeC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPX-Pf-Npe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPX-Pf-Npe" customClass="NavigationController" customModule="JFCinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tickets" image="tab_my tickets" id="123-Jl-CzZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bnK-VJ-0nT">

@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mainController.separatorStyle = UITableViewCellSeparatorStyle.none
+        
         //self.mainController.allowsSelection = false
     }
     
