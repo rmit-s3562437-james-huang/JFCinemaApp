@@ -15,10 +15,10 @@
 		85F698F41F4E9EC0009DA1D4 /* dunkirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */; };
 		85F698F51F4E9EC0009DA1D4 /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F11F4E9EC0009DA1D4 /* minions.jpg */; };
 		DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC076C471F4E93D300A9395F /* DescViewController.swift */; };
-		DC0E030B1F52A54B001FA916 /* TestMainContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03071F52A54B001FA916 /* TestMainContactsView.swift */; };
-		DC0E030C1F52A54B001FA916 /* TestMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03081F52A54B001FA916 /* TestMainView.swift */; };
-		DC0E030D1F52A54B001FA916 /* TestMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03091F52A54B001FA916 /* TestMoviesView.swift */; };
-		DC0E030E1F52A54B001FA916 /* TestTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E030A1F52A54B001FA916 /* TestTicketsView.swift */; };
+		DC0E031B1F52A6D9001FA916 /* TestMainContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03171F52A6D9001FA916 /* TestMainContactsView.swift */; };
+		DC0E031C1F52A6D9001FA916 /* TestMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03181F52A6D9001FA916 /* TestMainView.swift */; };
+		DC0E031D1F52A6D9001FA916 /* TestMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03191F52A6D9001FA916 /* TestMoviesView.swift */; };
+		DC0E031E1F52A6D9001FA916 /* TestTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E031A1F52A6D9001FA916 /* TestTicketsView.swift */; };
 		DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */; };
 		DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11531F4AAA8900BD9532 /* ViewController.swift */; };
 		DC4C11571F4AAA8900BD9532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C11551F4AAA8900BD9532 /* Main.storyboard */; };
@@ -67,10 +67,11 @@
 		85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk.jpg; sourceTree = "<group>"; };
 		85F698F11F4E9EC0009DA1D4 /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions.jpg; sourceTree = "<group>"; };
 		DC076C471F4E93D300A9395F /* DescViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
-		DC0E03071F52A54B001FA916 /* TestMainContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainContactsView.swift; sourceTree = "<group>"; };
-		DC0E03081F52A54B001FA916 /* TestMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainView.swift; sourceTree = "<group>"; };
-		DC0E03091F52A54B001FA916 /* TestMoviesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMoviesView.swift; sourceTree = "<group>"; };
-		DC0E030A1F52A54B001FA916 /* TestTicketsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTicketsView.swift; sourceTree = "<group>"; };
+		DC0E03171F52A6D9001FA916 /* TestMainContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainContactsView.swift; sourceTree = "<group>"; };
+		DC0E03181F52A6D9001FA916 /* TestMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainView.swift; sourceTree = "<group>"; };
+		DC0E03191F52A6D9001FA916 /* TestMoviesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMoviesView.swift; sourceTree = "<group>"; };
+		DC0E031A1F52A6D9001FA916 /* TestTicketsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTicketsView.swift; sourceTree = "<group>"; };
+		DC0E031F1F52A711001FA916 /* JFCinemaAppUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JFCinemaAppUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		DC4C114E1F4AAA8900BD9532 /* JFCinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C11511F4AAA8900BD9532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C11531F4AAA8900BD9532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,11 +186,12 @@
 		DC4C11701F4AAA8900BD9532 /* JFCinemaAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DC0E03071F52A54B001FA916 /* TestMainContactsView.swift */,
-				DC0E03081F52A54B001FA916 /* TestMainView.swift */,
-				DC0E03091F52A54B001FA916 /* TestMoviesView.swift */,
-				DC0E030A1F52A54B001FA916 /* TestTicketsView.swift */,
+				DC0E03171F52A6D9001FA916 /* TestMainContactsView.swift */,
+				DC0E03181F52A6D9001FA916 /* TestMainView.swift */,
+				DC0E03191F52A6D9001FA916 /* TestMoviesView.swift */,
+				DC0E031A1F52A6D9001FA916 /* TestTicketsView.swift */,
 				DC4C11731F4AAA8900BD9532 /* Info.plist */,
+				DC0E031F1F52A711001FA916 /* JFCinemaAppUITests-Bridging-Header.h */,
 			);
 			path = JFCinemaAppUITests;
 			sourceTree = "<group>";
@@ -392,10 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC0E030D1F52A54B001FA916 /* TestMoviesView.swift in Sources */,
-				DC0E030B1F52A54B001FA916 /* TestMainContactsView.swift in Sources */,
-				DC0E030E1F52A54B001FA916 /* TestTicketsView.swift in Sources */,
-				DC0E030C1F52A54B001FA916 /* TestMainView.swift in Sources */,
+				DC0E031D1F52A6D9001FA916 /* TestMoviesView.swift in Sources */,
+				DC0E031B1F52A6D9001FA916 /* TestMainContactsView.swift in Sources */,
+				DC0E031E1F52A6D9001FA916 /* TestTicketsView.swift in Sources */,
+				DC0E031C1F52A6D9001FA916 /* TestMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
