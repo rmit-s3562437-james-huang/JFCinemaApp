@@ -14,16 +14,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var model = Singleton.getInstance.movieList.naturalOrder()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    var selected: Movies?
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return model.count
@@ -34,7 +25,24 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         // set images
         cell.sessionImageView.image = model[indexPath.row].sessionImg
+        cell.sessionImageView.layer.cornerRadius = 2
+        cell.sessionImageView.layer.masksToBounds = true
+        cell.sessionImageView.layer.borderColor = UIColor.red.cgColor
+        
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        selected = model[indexPath.item]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "featToDesc" {
+            if let nv = segue.destination as? DescViewController {
+                nv.selected = selected
+            }
+        }
+    }
+    
     
 }

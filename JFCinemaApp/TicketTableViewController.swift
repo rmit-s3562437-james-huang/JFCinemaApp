@@ -14,11 +14,10 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet var myTableView: UITableView!
 
     var modelTicket: [Ticket]?
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        modelTicket = Singleton.getInstance.tickets
-//    }
+   
     @IBOutlet weak var myTicket: UITableView!
+    
+    let messageLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +34,22 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(modelTicket!.count)
-        return modelTicket!.count
+        if modelTicket!.count > 0 {
+            messageLabel.isHidden = true
+            return modelTicket!.count
+        } else {
+            
+            messageLabel.text = "You currently don't have any tickets yet."
+            messageLabel.textColor = UIColor.black
+            messageLabel.numberOfLines = 0;
+            messageLabel.textAlignment = .center
+            messageLabel.sizeToFit()
+            messageLabel.isHidden = false
+            
+            myTableView.backgroundView = messageLabel
+            
+            return 0
+        }
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
