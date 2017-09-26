@@ -28,6 +28,8 @@ class Rest {
     
     var moviesArray: Array<Any>!
     
+    //var sema = DispatchSemaphore( value: 0 )
+    
     init() {
         getMovie()
     }
@@ -63,9 +65,12 @@ class Rest {
         // NOTE: this call is asynchronous
         // - james
         
-        var chArray: [Any] = []
+        
         
         let task = session.dataTask(with: request, completionHandler: {data, response, downloadError in
+            
+            var chArray: [Any] = []
+            
             if let error = downloadError
             {
                 print("\(String(describing: data)) \n data")
@@ -119,6 +124,9 @@ class Rest {
         })
         // Execute the task
         task.resume()
+        
+        RunLoop.main.run(until: Date(timeIntervalSinceNow: 5))
+        //sema.wait()
     }
     
     func getMovieImage(_ movieId: String)
