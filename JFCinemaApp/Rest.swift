@@ -129,7 +129,7 @@ class Rest {
         //sema.wait()
     }
     
-    func getMovieImage(_ movieId: String)
+    func getMovieImage(_ movieId: String, moviesImage: UIImageView)
     {
         // Build the URL as the basis for the request
         let getRandomImage = BASE_URL + MOVIE_DETAILS + movieId + "/images" + API_KEY
@@ -181,7 +181,7 @@ class Rest {
                     // If the image exists at the url specified set the UIImageView to reference that image
                     if let imageData = try? Data(contentsOf: imageURL!)
                     {
-                        DispatchQueue.main.async(execute: {self.image.image = UIImage(data: imageData)})
+                        DispatchQueue.main.async(execute: {moviesImage.image = UIImage(data: imageData)})
                     }
                 }
             }

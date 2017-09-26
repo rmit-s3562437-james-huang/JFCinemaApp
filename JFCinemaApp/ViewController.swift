@@ -39,18 +39,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
-        
-        
-        
-        if let name = (rest.moviesArray[cellCount] as AnyObject).value(forKey: "id") as? Int {
-            print("movies id:")
-            print(name)
+    
+        if let id = (rest.moviesArray[cellCount] as AnyObject).value(forKey: "id") as? Int {
+            print("my id ----------:")
+            rest.getMovieImage(String(id), moviesImage: cell.myImage)
+            print(id)
         }
         
-        let movie: Movies = model[indexPath.item]
+        if let movieTitle = (rest.moviesArray[cellCount] as AnyObject).value(forKey: "original_title") as? String {
+            cell.myLabel.text = movieTitle
+        }
+        
+        //cell.myImage.image = movie.backdrop
+        //cell.myLabel.text = movie.title
+        //let movie: Movies = model[indexPath.item]
         cell.layoutIfNeeded()
-        cell.myImage.image = movie.backdrop
-        cell.myLabel.text = movie.title
         cell.myImage.layer.cornerRadius = 8
         cell.myImage.layer.masksToBounds = true
         cell.layer.cornerRadius = 8
