@@ -40,6 +40,7 @@
 		DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */; };
 		DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */; };
 		DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A91F4B2D4800BD9532 /* Movies.swift */; };
+		DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC796B651F6CE67A005E52C1 /* Rest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		DC4C11A91F4B2D4800BD9532 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		DC796B651F6CE67A005E52C1 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				DC4C11A91F4B2D4800BD9532 /* Movies.swift */,
 				DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */,
 				855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */,
+				DC796B651F6CE67A005E52C1 /* Rest.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				DC4C11821F4ADE3900BD9532 /* SessionTableViewCell.swift in Sources */,
 				DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */,
 				DC4C118C1F4ADFE400BD9532 /* BookViewController.swift in Sources */,
+				DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */,
 				DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */,
 				DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */,
 				DC0E03211F52AEA6001FA916 /* NavigationController.swift in Sources */,

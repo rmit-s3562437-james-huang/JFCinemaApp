@@ -11,15 +11,16 @@ import Foundation
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var rest = Singleton.getInstance.rest
+    
+    var count = 0
+    
     @IBOutlet weak var mainController: UITableView!
     
     var model = Singleton.getInstance.movieList.naturalOrder()
     
     var selected: Movies?
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
-    }
+    var cellCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +29,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //self.mainController.allowsSelection = false
     }
     
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+ 
+        print("TOTAL COUNT")
+        print(rest.moviesArray.count)
+        return rest.moviesArray.count
+
+    }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
+        
+        
+        
+        if let name = (rest.moviesArray[cellCount] as AnyObject).value(forKey: "id") as? Int {
+            print("movies id:")
+            print(name)
+        }
         
         let movie: Movies = model[indexPath.item]
         cell.layoutIfNeeded()
@@ -40,6 +55,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.myImage.layer.masksToBounds = true
         cell.layer.cornerRadius = 8
    
+        
+        
+        cellCount += 1
         return cell
     }
     
