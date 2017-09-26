@@ -168,7 +168,68 @@ class Rest {
                     let randomPhotoIndex = Int(arc4random_uniform(UInt32(photosArray.count)))
                     
                     // This time, I can convert to an NSDictionary, even though it is illformed the attribute I am after is quoted and so I can access it from the dictionary
-                    let imageDictionary = photosArray[randomPhotoIndex] as? NSDictionary
+                    let imageDictionary = photosArray[0] as? NSDictionary
+                    
+                    // Extract a random image url from the dictionary
+                    let imageUrlString = imageDictionary?.value(forKey: "file_path") as? NSString
+                    
+                    // Build the full url of the image
+                    let baseImageUrlString = "https://image.tmdb.org/t/p/original"
+                    let fullImageUrlString = baseImageUrlString + (imageUrlString! as String)
+                    let imageURL = URL(string: fullImageUrlString)
+                    
+                    // If the image exists at the url specified set the UIImageView to reference that image
+                    if let imageData = try? Data(contentsOf: imageURL!)
+                    {
+                        DispatchQueue.main.async(execute: {moviesImage.image = UIImage(data: imageData)})
+                    }
+                }
+            }
+        })
+        // Execute the task
+        task.resume()
+    }
+    
+    func getPosterImage(_ movieId: String, moviesImage: UIImageView)
+    {
+        // Build the URL as the basis for the request
+        let getRandomImage = BASE_URL + MOVIE_DETAILS + movieId + "/images" + API_KEY
+        let url = URL(string: getRandomImage)!
+        let request = URLRequest(url: url)
+        
+        // Initialise the task for getting the data
+        let task = session.dataTask(with: request, completionHandler: {data, response, downloadError in
+            if let error = downloadError
+            {
+                print(error)
+            }
+            else
+            {
+                // Parse the data received from the service
+                var parsingError: NSError? = nil
+                let parsedResult: Any!
+                do
+                {
+                    parsedResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                }
+                catch var error as NSError
+                {
+                    parsingError = error
+                    parsedResult = nil
+                }
+                catch
+                {
+                    fatalError()
+                }
+                
+                // Extract an element from the data as an array, if your JSON response returns a dictionary you will need to convert it to an NSDictionary
+                if let photosArray = (parsedResult as AnyObject).value(forKey: "posters") as? NSArray
+                {
+                    // Grab a random image from the array
+                    let randomPhotoIndex = Int(arc4random_uniform(UInt32(photosArray.count)))
+                    
+                    // This time, I can convert to an NSDictionary, even though it is illformed the attribute I am after is quoted and so I can access it from the dictionary
+                    let imageDictionary = photosArray[0] as? NSDictionary
                     
                     // Extract a random image url from the dictionary
                     let imageUrlString = imageDictionary?.value(forKey: "file_path") as? NSString

@@ -13,9 +13,13 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var myTableView: UITableView!
     
+    var rest = Singleton.getInstance.rest
+    var collectionArray: [[String]] = []
+    
     override func viewDidLoad() {
         self.myTableView.allowsSelection = false
         self.myTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        generateCollectionArray()
     }
     
     @IBAction func refreshButtonTapped(sender: AnyObject) {
@@ -36,14 +40,17 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return movieModel.count
+        return rest.moviesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SessionTableViewCell
         
-        cell.movieTitle.text = movieModel[indexPath.item].title
+        //cell.movieTitle.text = movieModel[indexPath.item].title
+        if let movieTitle = (rest.moviesArray[indexPath.item] as AnyObject).value(forKey: "original_title") as? String {
+            cell.movieTitle.text = movieTitle
+        }
         
         return cell
     }
@@ -65,6 +72,16 @@ class SessionTableViewController: UIViewController, UITableViewDataSource, UITab
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
     
+    func generateCollectionArray() {
+        for row in 0..<rest.moviesArray.count {
+            collectionArray.append( [String]() )
+            if let movieTitle = (rest.moviesArray[row] as AnyObject).value(forKey: "original_title") as? String {
+                for _ in 0..<5 {
+                    collectionArray[row].append(movieTitle)
+                }
+            }
+        }
+    }
     
 }
 
@@ -74,9 +91,6 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
        
         return 4
     }
-    
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -102,12 +116,18 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
         
         let bookViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! BookViewController
 
-        bookViewController.movieTitle = movieModel[collectionView.tag].title
+        //bookViewController.movieTitle = movieModel[collectionView.tag].title
+        
+//        if let movieTitle = (rest.moviesArray[indexPath.item] as AnyObject).value(forKey: "original_title") as? String {
+//            bookViewController.movieTitle = ""
+//        }
+        bookViewController.movieTitle = collectionArray[collectionView.tag][indexPath.item]
         bookViewController.row = collectionView.tag
         bookViewController.path = indexPath
-        bookViewController.content = (model[collectionView.tag]           [indexPath.item].titleLabel?.text)
+        bookViewController.content = (model[collectionView.tag][indexPath.item].titleLabel?.text)
 
         self.navigationController?.pushViewController(bookViewController, animated: true)
     }
+    
     
 }

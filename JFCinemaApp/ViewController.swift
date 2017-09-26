@@ -13,14 +13,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var rest = Singleton.getInstance.rest
     
-    var count = 0
     
     @IBOutlet weak var mainController: UITableView!
     
     var model = Singleton.getInstance.movieList.naturalOrder()
     
-    var selected: Movies?
-    var cellCount = 0
+    // should be of type movie
+    var selected: Any?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,39 +32,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
  
         print("TOTAL COUNT")
         print(rest.moviesArray.count)
-        return rest.moviesArray.count
+        return rest.moviesArray.count-1
 
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
     
-        if let id = (rest.moviesArray[cellCount] as AnyObject).value(forKey: "id") as? Int {
+        if let id = (rest.moviesArray[indexPath.item] as AnyObject).value(forKey: "id") as? Int {
             print("my id ----------:")
             rest.getMovieImage(String(id), moviesImage: cell.myImage)
             print(id)
         }
         
-        if let movieTitle = (rest.moviesArray[cellCount] as AnyObject).value(forKey: "original_title") as? String {
+        if let movieTitle = (rest.moviesArray[indexPath.item] as AnyObject).value(forKey: "original_title") as? String {
             cell.myLabel.text = movieTitle
         }
         
-        //cell.myImage.image = movie.backdrop
-        //cell.myLabel.text = movie.title
-        //let movie: Movies = model[indexPath.item]
         cell.layoutIfNeeded()
         cell.myImage.layer.cornerRadius = 8
         cell.myImage.layer.masksToBounds = true
         cell.layer.cornerRadius = 8
    
-        
-        
-        cellCount += 1
         return cell
     }
     
     public func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        selected = model[indexPath.item]
+        selected = rest.moviesArray[indexPath.item]
         performSegue(withIdentifier: "viewToDesc", sender: selected)
     }
     
