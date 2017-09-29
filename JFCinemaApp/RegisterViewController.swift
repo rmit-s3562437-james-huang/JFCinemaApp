@@ -10,9 +10,18 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    var user: mUser?
+    let uuid = NSUUID().uuidString
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func registerUser(_ sender: UIButton) {
+        CrudAccess.sharedInstance.createUser(id: uuid, username: usernameTextField.text!, password: passwordTextField.text!, existing: user)
     }
 }
