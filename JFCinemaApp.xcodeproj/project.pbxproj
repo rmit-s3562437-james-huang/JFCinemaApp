@@ -49,6 +49,7 @@
 		DC552F361F7E5BAB00204D71 /* mTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2D1F7E59D700204D71 /* mTicket+CoreDataClass.swift */; };
 		DC552F381F7E624800204D71 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F371F7E624800204D71 /* RegisterViewController.swift */; };
 		DC552F3A1F7E625C00204D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F391F7E625C00204D71 /* LoginViewController.swift */; };
+		DC5748F31F7E7B0000BDCE55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2B1F7E59A500204D71 /* Model.xcdatamodeld */; };
 		DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC796B651F6CE67A005E52C1 /* Rest.swift */; };
 /* End PBXBuildFile section */
 
@@ -514,6 +515,7 @@
 				DC552F341F7E5BA400204D71 /* mUser+CoreDataProperties.swift in Sources */,
 				DC552F261F7E579000204D71 /* ContactViewController.swift in Sources */,
 				DC552F321F7E5A1900204D71 /* CrudAccess.swift in Sources */,
+				DC5748F31F7E7B0000BDCE55 /* Model.xcdatamodeld in Sources */,
 				DC4C118C1F4ADFE400BD9532 /* BookViewController.swift in Sources */,
 				DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */,
 				DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */,

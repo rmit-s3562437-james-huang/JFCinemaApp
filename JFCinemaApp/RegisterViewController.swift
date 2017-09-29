@@ -18,7 +18,11 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        for user in CrudAccess.sharedInstance.users {
+            print(user.id!)
+            print(user.username!)
+            print(user.password!)
+        }
     }
     
     @IBAction func registerUser(_ sender: UIButton) {
