@@ -11,7 +11,7 @@ import GoogleMaps
 import MapKit
 
 class ContactViewController: UIViewController {
-
+    
     let mapView: GMSMapView? = nil
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ContactViewController: UIViewController {
                    y: self.view.frame.size.height/2-(195/2)+195,
                    width: 300,
                    height: 195), camera: camera)
-    
+        
         self.view.addSubview(mapView)
         
         // Creates a marker in the center of the map.
@@ -39,9 +39,10 @@ class ContactViewController: UIViewController {
         marker.map = mapView
         mapView.selectedMarker = marker
     }
-
+    
     // You don't need to modify the default init(nibName:bundle:) method.
     
     
-
+    
 }
+
