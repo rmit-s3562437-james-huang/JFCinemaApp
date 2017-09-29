@@ -47,6 +47,8 @@
 		DC552F341F7E5BA400204D71 /* mUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F301F7E59D700204D71 /* mUser+CoreDataProperties.swift */; };
 		DC552F351F7E5BA700204D71 /* mTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2E1F7E59D700204D71 /* mTicket+CoreDataProperties.swift */; };
 		DC552F361F7E5BAB00204D71 /* mTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2D1F7E59D700204D71 /* mTicket+CoreDataClass.swift */; };
+		DC552F381F7E624800204D71 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F371F7E624800204D71 /* RegisterViewController.swift */; };
+		DC552F3A1F7E625C00204D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F391F7E625C00204D71 /* LoginViewController.swift */; };
 		DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC796B651F6CE67A005E52C1 /* Rest.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +120,8 @@
 		DC552F2F1F7E59D700204D71 /* mUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mUser+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DC552F301F7E59D700204D71 /* mUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DC552F311F7E5A1800204D71 /* CrudAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudAccess.swift; sourceTree = "<group>"; };
+		DC552F371F7E624800204D71 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DC552F391F7E625C00204D71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC796B651F6CE67A005E52C1 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +193,8 @@
 				DC4C118B1F4ADFE400BD9532 /* BookViewController.swift */,
 				DC076C471F4E93D300A9395F /* DescViewController.swift */,
 				DC552F251F7E579000204D71 /* ContactViewController.swift */,
+				DC552F371F7E624800204D71 /* RegisterViewController.swift */,
+				DC552F391F7E625C00204D71 /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */,
 				DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */,
 				DC4C11841F4ADE6D00BD9532 /* SessionTableViewController.swift in Sources */,
+				DC552F381F7E624800204D71 /* RegisterViewController.swift in Sources */,
 				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
 				855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */,
 				DC552F331F7E5BA100204D71 /* mUser+CoreDataClass.swift in Sources */,
@@ -526,6 +533,7 @@
 				DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */,
 				855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */,
 				DC4C118A1F4ADFB700BD9532 /* Helper.swift in Sources */,
+				DC552F3A1F7E625C00204D71 /* LoginViewController.swift in Sources */,
 				DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
