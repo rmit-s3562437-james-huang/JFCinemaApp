@@ -1034,7 +1034,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="229"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7vb-hS-nAL" id="h3B-pK-qGy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="228.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="228.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="movie_title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1v-vt-hAY">
@@ -1751,13 +1751,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="QO2-81-idI" kind="show" id="z7C-O7-iaP"/>
+                                    <segue destination="QO2-81-idI" kind="show" id="klJ-aF-DKl"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contactsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4Z-9U-dkI">
+                                <rect key="frame" x="97" y="103" width="221" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UvL-os-0Ed"/>
+                    <navigationItem key="navigationItem" title="Login" id="Lgv-IK-TN5">
+                        <barButtonItem key="backBarButtonItem" title="Register" id="ugd-0Q-qWD"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHC-5Y-ksa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1808,7 +1814,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <segue destination="wfb-zY-TmG" kind="show" id="dIA-Hp-s1C"/>
+                                    <segue destination="wfb-zY-TmG" kind="show" id="2ZI-hU-a82"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDz-Ye-jNA">
@@ -1822,11 +1828,20 @@
                                 <rect key="frame" x="260" y="417" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Accept"/>
+                                <connections>
+                                    <segue destination="wfb-zY-TmG" kind="showDetail" id="t4O-Tu-Wjc"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contactsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-VL-6bI">
+                                <rect key="frame" x="97" y="90" width="221" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="lgB-jR-qtJ"/>
+                    <navigationItem key="navigationItem" title="Registration" id="lgB-jR-qtJ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EOj-UM-Ck5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="passwordFieldText" destination="JsI-9n-HCf" id="tWw-3E-R9F"/>
                         <outlet property="usernameFieldText" destination="dYh-Tl-ghB" id="QNS-Mg-41k"/>
@@ -1834,7 +1849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bIs-Xa-Vob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1993" y="2207"/>
+            <point key="canvasLocation" x="-1994.2028985507247" y="2206.79347826087"/>
         </scene>
         <!--JFCinemas-->
         <scene sceneID="kEM-Gj-VcM">
@@ -1967,6 +1982,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7gX-cr-XVS">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.16883902249999999" green="0.39365080000000002" blue="0.2157567292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1987,6 +2006,7 @@
         <image name="tab_session" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="2ZI-hU-a82"/>
         <segue reference="UWM-ax-HTe"/>
     </inferredMetricsTieBreakers>
 </document>
