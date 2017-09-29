@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    //movieDB key
+    static var key:String = "fcefd09b157f66960bf7326639ed19c7"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyCTgP0W2w7v-7n6koJRLcS7ZDdKygXycZE")
         return true
     }
 

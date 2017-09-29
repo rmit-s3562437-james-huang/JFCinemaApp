@@ -14,17 +14,25 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var model = Singleton.getInstance.movieList.naturalOrder()
     
-    var selected: Movies?
+    let rest = Singleton.getInstance.rest
+    
+    var selected: Any?
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model.count
+        return rest.moviesArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featured_cell", for: indexPath) as! FeaturedCollectionViewCell
         
         // set images
-        cell.sessionImageView.image = model[indexPath.row].sessionImg
+        //cell.sessionImageView.image = model[indexPath.row].sessionImg
+        
+        if let id = (rest.moviesArray[indexPath.item] as AnyObject).value(forKey: "id") as? Int {
+            rest.getPosterImage(String(id), moviesImage: cell.sessionImageView)
+        }
+        
+        
         cell.sessionImageView.layer.cornerRadius = 2
         cell.sessionImageView.layer.masksToBounds = true
         cell.sessionImageView.layer.borderColor = UIColor.red.cgColor
@@ -33,7 +41,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-        selected = model[indexPath.item]
+        selected = rest.moviesArray[indexPath.item]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

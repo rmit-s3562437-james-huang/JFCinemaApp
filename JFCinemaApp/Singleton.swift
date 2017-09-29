@@ -13,10 +13,11 @@ final class Singleton {
     var movieList: MovieList
     var tickets: [Ticket] = []
     var ticket: Ticket
+    var rest: Rest
     private init() {
         movieList = MovieList()
         ticket = Ticket()
-
+        rest = Rest()
     }
     
     private struct Static {

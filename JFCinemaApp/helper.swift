@@ -9,7 +9,7 @@
 import UIKit
 
 func generateRandomData() -> [[UIButton]] {
-    let numberOfRows = 5
+    let numberOfRows = Singleton.getInstance.rest.moviesArray.count
     let numberOfItemsPerRow = 5
     
     return (0..<numberOfRows).map { _ in

@@ -10,7 +10,7 @@ import UIKit
 
 class DescViewController: UIViewController {
 
-    var selected: Movies!
+    var selected: Any!
     
     @IBOutlet weak var myTitle: UILabel!
     @IBOutlet weak var myImage: UIImageView!
@@ -20,11 +20,31 @@ class DescViewController: UIViewController {
     @IBOutlet weak var contentDesc: UITextView!
     
     override func viewDidLoad() {
-        self.myTitle.text = selected.title
-        self.myImage.image = selected.backdrop
-        self.rating.text = selected.userRating
-        self.classDesc.text = selected.classification
-        self.contentDesc.text = selected.description
+//        self.myTitle.text = selected.title
+//        self.myImage.image = selected.backdrop
+//        self.rating.text = selected.userRating
+//        self.classDesc.text = selected.classification
+//        self.contentDesc.text = selected.description
+        
+        if let movieTitle = (selected as AnyObject).value(forKey: "original_title") as? String {
+            self.myTitle.text = movieTitle
+        }
+        
+        if let id = (selected as AnyObject).value(forKey: "id") as? Int {
+            Singleton.getInstance.rest.getMovieImage(String(id), moviesImage: self.myImage)
+        }
+        
+        if let rating = (selected as AnyObject).value(forKey: "vote_average") as? Double {
+            self.rating.text = String(rating)
+        }
+        
+        if let release = (selected as AnyObject).value(forKey: "release_date") as? String {
+            self.classDesc.text = release
+        }
+        
+        if let overview = (selected as AnyObject).value(forKey: "overview") as? String {
+            self.contentDesc.text = overview
+        }
     }
     
     // Go to sessions
