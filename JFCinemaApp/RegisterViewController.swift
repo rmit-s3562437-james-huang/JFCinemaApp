@@ -22,5 +22,15 @@ class RegisterViewController: UIViewController {
     
     @IBAction func registerUser(_ sender: UIButton) {
         CrudAccess.sharedInstance.createUser(id: uuid, username: usernameTextField.text!, password: passwordTextField.text!, existing: user)
+    
+        let alert = UIAlertController(title: "Success", message: "Account has been created", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { action in
+            self.performSegue(withIdentifier: "successfullyRegisteredSegue", sender: self)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
+
+
