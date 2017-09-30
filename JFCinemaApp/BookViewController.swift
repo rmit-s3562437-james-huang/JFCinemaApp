@@ -16,6 +16,10 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
     var path: IndexPath!
     var content: String!
     
+    var childPrice: Double = 9.50
+    var concessionPrice: Double = 12.0
+    var adultPrice: Double = 14.0
+    
     var childTicket: Int = 0
     var concessionTicket: Int = 0
     var adultTicket: Int = 0
@@ -23,6 +27,7 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
     var viewController: UIViewController?
     
     var myTicket = Ticket()
+    var ticket: mTicket?
 
     @IBOutlet weak var childTickets: UILabel!
     @IBOutlet weak var concessionTickets: UILabel!
@@ -62,6 +67,20 @@ class BookViewController: UIViewController, UITabBarControllerDelegate {
     @IBAction func confirmTicket(_ sender: UIButton) {
         
         myTicket = Ticket(title: movieTitle, sess: content, child: childTicket, concess: concessionTicket, adult: adultTicket)
+        
+        // accessing coredata to store tickets for logged user
+        let tid = NSUUID().uuidString
+        let totalPrice = (childPrice * Double(childTicket)) + (concessionPrice * Double(concessionTicket)) + (adultPrice * Double(adultTicket))
+        
+        CrudAccess.sharedInstance.createTicket(id: tid, session: content, title: movieTitle, adult: adultTicket, child: childTicket, concession: concessionTicket, price: Int(totalPrice), existing: ticket)
+        
+        
+        let currentUser = CrudAccess.sharedInstance.retrieveUserById((Singleton.getInstance.currentUser?.id)!)
+        
+        //currentUser.tickets?.adding(CrudAccess.sharedInstance.retrieveTicketById(tid))
+        currentUser.addToTickets(CrudAccess.sharedInstance.retrieveTicketById(tid))
+        CrudAccess.sharedInstance.updateEntity()
+        
         Singleton.getInstance.tickets.append(myTicket)
         _ = navigationController?.popToRootViewController(animated: true)
 

@@ -41,12 +41,12 @@
 		DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */; };
 		DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */; };
 		DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C11A91F4B2D4800BD9532 /* Movies.swift */; };
+		DC4CA0471F7FC2E800BE1E8F /* mUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4CA0431F7FC2E800BE1E8F /* mUser+CoreDataClass.swift */; };
+		DC4CA0481F7FC2E800BE1E8F /* mUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4CA0441F7FC2E800BE1E8F /* mUser+CoreDataProperties.swift */; };
+		DC4CA0491F7FC2E800BE1E8F /* mTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4CA0451F7FC2E800BE1E8F /* mTicket+CoreDataClass.swift */; };
+		DC4CA04A1F7FC2E800BE1E8F /* mTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4CA0461F7FC2E800BE1E8F /* mTicket+CoreDataProperties.swift */; };
 		DC552F261F7E579000204D71 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F251F7E579000204D71 /* ContactViewController.swift */; };
 		DC552F321F7E5A1900204D71 /* CrudAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F311F7E5A1800204D71 /* CrudAccess.swift */; };
-		DC552F331F7E5BA100204D71 /* mUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2F1F7E59D700204D71 /* mUser+CoreDataClass.swift */; };
-		DC552F341F7E5BA400204D71 /* mUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F301F7E59D700204D71 /* mUser+CoreDataProperties.swift */; };
-		DC552F351F7E5BA700204D71 /* mTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2E1F7E59D700204D71 /* mTicket+CoreDataProperties.swift */; };
-		DC552F361F7E5BAB00204D71 /* mTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2D1F7E59D700204D71 /* mTicket+CoreDataClass.swift */; };
 		DC552F381F7E624800204D71 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F371F7E624800204D71 /* RegisterViewController.swift */; };
 		DC552F3A1F7E625C00204D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F391F7E625C00204D71 /* LoginViewController.swift */; };
 		DC5748F31F7E7B0000BDCE55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2B1F7E59A500204D71 /* Model.xcdatamodeld */; };
@@ -114,12 +114,12 @@
 		DC4C11A31F4AEC1D00BD9532 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		DC4C11A51F4B0F4B00BD9532 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		DC4C11A91F4B2D4800BD9532 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		DC4CA0431F7FC2E800BE1E8F /* mUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DC4CA0441F7FC2E800BE1E8F /* mUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC4CA0451F7FC2E800BE1E8F /* mTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mTicket+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DC4CA0461F7FC2E800BE1E8F /* mTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mTicket+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DC552F251F7E579000204D71 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		DC552F2C1F7E59A500204D71 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		DC552F2D1F7E59D700204D71 /* mTicket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mTicket+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DC552F2E1F7E59D700204D71 /* mTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mTicket+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DC552F2F1F7E59D700204D71 /* mUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mUser+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DC552F301F7E59D700204D71 /* mUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DC552F311F7E5A1800204D71 /* CrudAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudAccess.swift; sourceTree = "<group>"; };
 		DC552F371F7E624800204D71 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DC552F391F7E625C00204D71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -300,10 +300,10 @@
 		DC552F271F7E58E700204D71 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DC552F2D1F7E59D700204D71 /* mTicket+CoreDataClass.swift */,
-				DC552F2E1F7E59D700204D71 /* mTicket+CoreDataProperties.swift */,
-				DC552F2F1F7E59D700204D71 /* mUser+CoreDataClass.swift */,
-				DC552F301F7E59D700204D71 /* mUser+CoreDataProperties.swift */,
+				DC4CA0431F7FC2E800BE1E8F /* mUser+CoreDataClass.swift */,
+				DC4CA0441F7FC2E800BE1E8F /* mUser+CoreDataProperties.swift */,
+				DC4CA0451F7FC2E800BE1E8F /* mTicket+CoreDataClass.swift */,
+				DC4CA0461F7FC2E800BE1E8F /* mTicket+CoreDataProperties.swift */,
 				DC552F311F7E5A1800204D71 /* CrudAccess.swift */,
 			);
 			name = CoreData;
@@ -512,9 +512,10 @@
 			files = (
 				DC4C11821F4ADE3900BD9532 /* SessionTableViewCell.swift in Sources */,
 				DC4C11AA1F4B2D4800BD9532 /* Movies.swift in Sources */,
-				DC552F341F7E5BA400204D71 /* mUser+CoreDataProperties.swift in Sources */,
 				DC552F261F7E579000204D71 /* ContactViewController.swift in Sources */,
 				DC552F321F7E5A1900204D71 /* CrudAccess.swift in Sources */,
+				DC4CA04A1F7FC2E800BE1E8F /* mTicket+CoreDataProperties.swift in Sources */,
+				DC4CA0471F7FC2E800BE1E8F /* mUser+CoreDataClass.swift in Sources */,
 				DC5748F31F7E7B0000BDCE55 /* Model.xcdatamodeld in Sources */,
 				DC4C118C1F4ADFE400BD9532 /* BookViewController.swift in Sources */,
 				DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */,
@@ -523,20 +524,19 @@
 				DC0E03211F52AEA6001FA916 /* NavigationController.swift in Sources */,
 				DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */,
 				DC4C11881F4ADF0900BD9532 /* FeaturedViewController.swift in Sources */,
-				DC552F351F7E5BA700204D71 /* mTicket+CoreDataProperties.swift in Sources */,
 				855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */,
 				DC4C11A61F4B0F4B00BD9532 /* Singleton.swift in Sources */,
 				DC4C11841F4ADE6D00BD9532 /* SessionTableViewController.swift in Sources */,
 				DC552F381F7E624800204D71 /* RegisterViewController.swift in Sources */,
+				DC4CA0481F7FC2E800BE1E8F /* mUser+CoreDataProperties.swift in Sources */,
 				DC4C11521F4AAA8900BD9532 /* AppDelegate.swift in Sources */,
 				855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */,
-				DC552F331F7E5BA100204D71 /* mUser+CoreDataClass.swift in Sources */,
-				DC552F361F7E5BAB00204D71 /* mTicket+CoreDataClass.swift in Sources */,
 				DC4C11801F4ADDEF00BD9532 /* ViewControllerTableViewCell.swift in Sources */,
 				855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */,
 				DC4C118A1F4ADFB700BD9532 /* Helper.swift in Sources */,
 				DC552F3A1F7E625C00204D71 /* LoginViewController.swift in Sources */,
 				DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */,
+				DC4CA0491F7FC2E800BE1E8F /* mTicket+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

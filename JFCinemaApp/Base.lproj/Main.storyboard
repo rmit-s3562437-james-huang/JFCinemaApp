@@ -1768,6 +1768,7 @@
                         <outlet property="passwordTextField" destination="LWY-Jd-fm3" id="yZC-sO-iq5"/>
                         <outlet property="usernameTextField" destination="UyF-fu-6Y4" id="5No-gB-Ky4"/>
                         <segue destination="8fa-yR-cUF" kind="show" identifier="loginSuccess" id="EpN-Oi-yMz"/>
+                        <segue destination="JTo-b8-Mpt" kind="show" identifier="userToTicket" id="kfR-zK-zbI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHC-5Y-ksa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2012,7 +2013,8 @@
         <image name="tab_session" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2ZI-hU-a82"/>
+        <segue reference="t4O-Tu-Wjc"/>
         <segue reference="UWM-ax-HTe"/>
+        <segue reference="kfR-zK-zbI"/>
     </inferredMetricsTieBreakers>
 </document>

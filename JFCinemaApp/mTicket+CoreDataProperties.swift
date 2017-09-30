@@ -1,8 +1,9 @@
 //
 //  mTicket+CoreDataProperties.swift
-//  
+//  JFCinemaApp
 //
-//  Created by James Huang on 29/9/17.
+//  Created by James Huang on 30/9/17.
+//  Copyright © 2017 James Huang. All rights reserved.
 //
 //
 
@@ -22,6 +23,7 @@ extension mTicket {
     @NSManaged public var id: String?
     @NSManaged public var movieTitle: String?
     @NSManaged public var session: String?
+    @NSManaged public var price: Int16
     @NSManaged public var user: mUser?
 
 }

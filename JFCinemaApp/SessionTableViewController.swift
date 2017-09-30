@@ -116,11 +116,6 @@ extension SessionTableViewController: UICollectionViewDelegate, UICollectionView
         
         let bookViewController = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! BookViewController
 
-        //bookViewController.movieTitle = movieModel[collectionView.tag].title
-        
-//        if let movieTitle = (rest.moviesArray[indexPath.item] as AnyObject).value(forKey: "original_title") as? String {
-//            bookViewController.movieTitle = ""
-//        }
         bookViewController.movieTitle = collectionArray[collectionView.tag][indexPath.item]
         bookViewController.row = collectionView.tag
         bookViewController.path = indexPath

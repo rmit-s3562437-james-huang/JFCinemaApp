@@ -44,7 +44,7 @@ class CrudAccess {
         updateEntity()
     }
     
-    func createTicket (id: String, session: String , title: String, adult: Int, child: Int, concession: Int, existing: mTicket?) {
+    func createTicket (id: String, session: String , title: String, adult: Int, child: Int, concession: Int, price: Int, existing: mTicket?) {
         let entity = NSEntityDescription.entity(forEntityName: "Ticket" , in: managedContext)!
         
         if let _ = existing
@@ -55,6 +55,7 @@ class CrudAccess {
             existing!.adult = Int16(adult)
             existing!.child = Int16(child)
             existing!.concession = Int16(concession)
+            existing!.price = Int16(price)
         } else {
             let ticket = NSManagedObject (entity: entity, insertInto: managedContext)
             
@@ -64,6 +65,7 @@ class CrudAccess {
             ticket.setValue(child, forKeyPath: "child")
             ticket.setValue(concession, forKeyPath: "concession")
             ticket.setValue(adult, forKeyPath: "adult")
+            ticket.setValue(price, forKeyPath: "price")
             tickets.append(ticket as! mTicket)
         }
         updateEntity()
@@ -91,7 +93,13 @@ class CrudAccess {
     private func getEntitiesFromCoreData() {
         let fetchUsers: NSFetchRequest<mUser> = mUser.fetchRequest()
         let fetchTickets: NSFetchRequest<mTicket> = mTicket.fetchRequest()
+        // - CLEAN COREDATA -
+        //let request1 = NSBatchDeleteRequest(fetchRequest: fetchUsers as! NSFetchRequest<NSFetchRequestResult>)
+        //let request2 = NSBatchDeleteRequest(fetchRequest: fetchTickets as! NSFetchRequest<NSFetchRequestResult>)
+
         do {
+            //_ = try managedContext.execute(request1)
+            //_ = try managedContext.execute(request2)
             users = try managedContext.fetch(fetchUsers)
             tickets = try managedContext.fetch(fetchTickets)
         } catch let error as NSError {
@@ -99,17 +107,34 @@ class CrudAccess {
         }
     }
     
-    func retrieveTicket (_ indexPath: IndexPath) -> mTicket
-    {
+    func retrieveTicket (_ indexPath: IndexPath) -> mTicket {
         return tickets[indexPath.row]
     }
    
-    func retrieveUser (_ indexPath: IndexPath) -> mUser
-    {
+    func retrieveUser (_ indexPath: IndexPath) -> mUser {
         return users[indexPath.row]
     }
     
+    func retrieveTicketById (_ id: String) -> mTicket {
+        for ticket in tickets {
+            if (id == ticket.id!) {
+                return ticket
+            }
+        }
+        return tickets[0]
+    }
+    
+    func retrieveUserById (_ id: String) -> mUser {
+        for user in users {
+            if (id == user.id!) {
+                return user
+            }
+        }
+        return users[0]
+    }
+    
     private init() {
+        managedContext.shouldDeleteInaccessibleFaults = false
         getEntitiesFromCoreData()
     }
     

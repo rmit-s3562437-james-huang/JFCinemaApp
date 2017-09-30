@@ -14,6 +14,8 @@ final class Singleton {
     var tickets: [Ticket] = []
     var ticket: Ticket
     var rest: Rest
+    var currentUser: mUser?
+    
     private init() {
         movieList = MovieList()
         ticket = Ticket()
