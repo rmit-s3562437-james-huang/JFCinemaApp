@@ -1,0 +1,6 @@
+1. Make sure project is opened through Xcode via JFCinemaApp.xcworkspace located in the root of JFCinemaAPP folder
+
+2. To insure pod is working, pod install and pod update. Then finally, clean the project and the build by these two commands:
+
+Clean Build: Command + alt option + Shift + K
+Clean Project: Command + Shift + K
