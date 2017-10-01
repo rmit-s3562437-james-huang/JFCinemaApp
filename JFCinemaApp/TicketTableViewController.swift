@@ -11,9 +11,6 @@ import Foundation
 
 class TicketTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ClassEditTicketDelegate {
     
-    
-    
-
     @IBOutlet var myTableView: UITableView!
     @IBOutlet weak var myTicket: UITableView!
     
@@ -42,7 +39,16 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func updateTicket(_ userTicket: mTicket) {
-        CrudAccess.sharedInstance.updateEntity()
+        let currentUser = CrudAccess.sharedInstance.retrieveUserById((Singleton.getInstance.currentUser?.id)!)
+        for ticket in currentUser.tickets! {
+            if (ticket as? mTicket)?.id == userTicket.id {
+                (ticket as? mTicket)?.adult = Int16(userTicket.adult)
+                (ticket as? mTicket)?.child = userTicket.child
+                (ticket as? mTicket)?.concession = userTicket.concession
+                (ticket as? mTicket)?.price = userTicket.price
+                CrudAccess.sharedInstance.updateEntity()
+            }
+        }
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,10 +79,15 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "editTicket" {
-            if let nv = segue.destination as? EditTicketViewController {
-                nv.selectedTicket = self.selectedTicket
-            }
+//        if segue.identifier == "editTicket" {
+//            if let nv = segue.destination as? EditTicketViewController {
+//                nv.selectedTicket = self.selectedTicket
+//            }
+//        }
+        
+        if let nav = segue.destination as? UINavigationController, let editTicket = nav.topViewController as? EditTicketViewController {
+            editTicket.selectedTicket = self.selectedTicket
+            editTicket.delegate = self
         }
     }
     

@@ -1201,7 +1201,7 @@
                     <connections>
                         <outlet property="myTableView" destination="jrA-3b-Gte" id="Hc7-Bm-Yui"/>
                         <outlet property="myTicket" destination="jrA-3b-Gte" id="yMg-Ag-fZG"/>
-                        <segue destination="qVk-MR-g4B" kind="show" identifier="editTicket" id="DPC-VO-b26"/>
+                        <segue destination="CKM-sr-gTW" kind="show" identifier="editTicket" id="9dZ-ne-gwR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkI-Lg-Fxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1307,7 +1307,6 @@
                                 <connections>
                                     <action selector="confirmTicket:" destination="yrx-Wl-lOm" eventType="touchUpInside" id="D1X-ug-z4J"/>
                                     <action selector="editDone:" destination="qVk-MR-g4B" eventType="touchUpInside" id="nho-6h-7cE"/>
-                                    <segue destination="JTo-b8-Mpt" kind="show" id="7JC-tP-7eD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoc-dJ-Wav">
@@ -1320,6 +1319,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tp7-Ur-Qlm"/>
                     <connections>
                         <outlet property="adultTotal" destination="PXs-cQ-zaP" id="aoA-2X-Np3"/>
                         <outlet property="childrenTotal" destination="zWf-5e-hup" id="1eM-N3-xG1"/>
@@ -1329,7 +1329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Nd-96-4vS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4559" y="1452"/>
+            <point key="canvasLocation" x="4865.217391304348" y="1451.9021739130435"/>
         </scene>
         <!--Movies-->
         <scene sceneID="Cgu-5N-lnQ">
@@ -2126,6 +2126,24 @@
             </objects>
             <point key="canvasLocation" x="-1877" y="2207"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dfk-TS-Z8U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CKM-sr-gTW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PSh-mP-Kbb">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qVk-MR-g4B" kind="relationship" relationship="rootViewController" id="brs-Qg-hXc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOJ-Pn-Vrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3712" y="1452"/>
+        </scene>
     </scenes>
     <resources>
         <image name="contactsImage.png" width="907" height="884"/>
@@ -2137,6 +2155,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="UWM-ax-HTe"/>
-        <segue reference="7JC-tP-7eD"/>
+        <segue reference="0l2-uk-JwH"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -64,18 +64,9 @@ class EditTicketViewController: UIViewController {
         selectedTicket.child = Int16(childTicket)
         selectedTicket.concession = Int16(concessionTicket)
         selectedTicket.price = Int16(totalPrice)
-        let currentUser = CrudAccess.sharedInstance.retrieveUserById((Singleton.getInstance.currentUser?.id)!)
-        for ticket in currentUser.tickets! {
-            if (ticket as? mTicket)?.id == selectedTicket.id {
-                (ticket as? mTicket)?.adult = Int16(selectedTicket.adult)
-                (ticket as? mTicket)?.child = selectedTicket.child
-                (ticket as? mTicket)?.concession = selectedTicket.concession
-                (ticket as? mTicket)?.price = selectedTicket.price
-                CrudAccess.sharedInstance.updateEntity()
-            }
-        }
         
         delegate?.updateTicket(selectedTicket)
+        navigationController?.dismiss(animated: true)
     }
 
     
