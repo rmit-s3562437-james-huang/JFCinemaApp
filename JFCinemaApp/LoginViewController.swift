@@ -28,24 +28,30 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func userLogin(_ sender: UIButton) {
+        //path of core data
+        let path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
+        print("\(path)")
+        
         for user in CrudAccess.sharedInstance.users {
             if (usernameTextField.text! == user.username! &&
                 passwordTextField.text! == user.password!) {
                 print("valid user")
-                loginUser = user
                 performSegue(withIdentifier: "loginSuccess", sender: nil)
-                Singleton.getInstance.currentUser = user
+            }
+            
+            // If password is incorrect
+            if (usernameTextField.text! == user.username! && passwordTextField.text! != user.password!) {
+                print("invalid password")
+                
+                let alert = UIAlertController(title: "Error", message: "Invalid password", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Re-enter", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+                // clear the fields
+                //usernameTextField.text = ""
+                passwordTextField.text = ""
             }
         }
     }
-//    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "userToTicket" {
-//            if let ticketTable = segue.destination as? TicketTableViewController {
-//                ticketTable.userId = loginUser?.id!
-//                
-//            }
-//        }
-//    }
     
 }
