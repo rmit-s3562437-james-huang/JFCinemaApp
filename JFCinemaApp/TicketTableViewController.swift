@@ -73,4 +73,18 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
         
         return cell
     }
+    
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+       
+        let currentUser = CrudAccess.sharedInstance.retrieveUserById((Singleton.getInstance.currentUser?.id)!)
+        let userTicket: mTicket = userTicketArray![indexPath.item] as! mTicket
+        currentUser.removeFromTickets(userTicket)
+        userTicketArray?.remove(at: indexPath.item)
+        
+        CrudAccess.sharedInstance.updateEntity()
+        
+        tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+    }
+    
+    
 }
