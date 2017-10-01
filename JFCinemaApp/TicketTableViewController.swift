@@ -9,7 +9,10 @@
 import UIKit
 import Foundation
 
-class TicketTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TicketTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ClassEditTicketDelegate {
+    
+    
+    
 
     @IBOutlet var myTableView: UITableView!
     @IBOutlet weak var myTicket: UITableView!
@@ -17,9 +20,11 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
     var modelTicket: [Ticket]?
     let messageLabel = UILabel()
     var userTicketArray: [Any]?
+    var selectedTicket: mTicket?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.myTableView.separatorStyle = UITableViewCellSeparatorStyle.none
         modelTicket = Singleton.getInstance.tickets
         let currentUser = CrudAccess.sharedInstance.retrieveUserById((Singleton.getInstance.currentUser?.id)!)
@@ -36,24 +41,11 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
         myTableView.reloadData()
     }
     
+    func updateTicket(_ userTicket: mTicket) {
+        CrudAccess.sharedInstance.updateEntity()
+    }
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if modelTicket!.count > 0 {
-//            messageLabel.isHidden = true
-//            return modelTicket!.count
-//        } else {
-//
-//            messageLabel.text = "You currently don't have any tickets yet."
-//            messageLabel.textColor = UIColor.black
-//            messageLabel.numberOfLines = 0;
-//            messageLabel.textAlignment = .center
-//            messageLabel.sizeToFit()
-//            messageLabel.isHidden = false
-//
-//            myTableView.backgroundView = messageLabel
-//
-//            return 0
-//        }
-//
         return (userTicketArray?.count)!
     }
     
@@ -71,7 +63,21 @@ class TicketTableViewController: UIViewController, UITableViewDataSource, UITabl
         cell.adultQty.text = String(userTicket.adult)
         cell.priceLbl.text = "$"+String(userTicket.price)
         
+        
         return cell
+    }
+
+    public func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        selectedTicket = (userTicketArray![indexPath.item] as? mTicket)
+        performSegue(withIdentifier: "editTicket", sender: selectedTicket)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editTicket" {
+            if let nv = segue.destination as? EditTicketViewController {
+                nv.selectedTicket = self.selectedTicket
+            }
+        }
     }
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

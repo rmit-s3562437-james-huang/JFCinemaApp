@@ -51,6 +51,7 @@
 		DC552F3A1F7E625C00204D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC552F391F7E625C00204D71 /* LoginViewController.swift */; };
 		DC5748F31F7E7B0000BDCE55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC552F2B1F7E59A500204D71 /* Model.xcdatamodeld */; };
 		DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC796B651F6CE67A005E52C1 /* Rest.swift */; };
+		DC8A58DE1F80FECC00F3A939 /* EditTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A58DD1F80FECC00F3A939 /* EditTicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		DC552F371F7E624800204D71 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DC552F391F7E625C00204D71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC796B651F6CE67A005E52C1 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		DC8A58DD1F80FECC00F3A939 /* EditTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				DC552F251F7E579000204D71 /* ContactViewController.swift */,
 				DC552F371F7E624800204D71 /* RegisterViewController.swift */,
 				DC552F391F7E625C00204D71 /* LoginViewController.swift */,
+				DC8A58DD1F80FECC00F3A939 /* EditTicketViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				DC4C118C1F4ADFE400BD9532 /* BookViewController.swift in Sources */,
 				DC796B661F6CE67A005E52C1 /* Rest.swift in Sources */,
 				DC4C11A41F4AEC1D00BD9532 /* MovieList.swift in Sources */,
+				DC8A58DE1F80FECC00F3A939 /* EditTicketViewController.swift in Sources */,
 				DC4C11541F4AAA8900BD9532 /* ViewController.swift in Sources */,
 				DC0E03211F52AEA6001FA916 /* NavigationController.swift in Sources */,
 				DC4C11861F4ADEDC00BD9532 /* FeaturedCollectionViewCell.swift in Sources */,
