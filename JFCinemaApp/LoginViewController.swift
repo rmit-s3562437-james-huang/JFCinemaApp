@@ -36,7 +36,9 @@ class LoginViewController: UIViewController {
             if (usernameTextField.text! == user.username! &&
                 passwordTextField.text! == user.password!) {
                 print("valid user")
+                loginUser = user
                 performSegue(withIdentifier: "loginSuccess", sender: nil)
+                Singleton.getInstance.currentUser = user
             }
             
             // If password is incorrect
