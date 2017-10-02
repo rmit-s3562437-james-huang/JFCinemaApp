@@ -2,17 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD
-=======
-	<key>SchemeUserState</key>
-	<dict>
-		<key>Pods-JFCinemaApp.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-	</dict>
->>>>>>> ee6fd08bc5f64d7c9fcaf1222a5aa95b5d1e52c5
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3425B7C39ECCFA98D617CAF37C53C6FC</key>

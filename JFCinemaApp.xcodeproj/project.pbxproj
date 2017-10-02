@@ -11,8 +11,6 @@
 		855D5D161F4FC95F00A1FE1A /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D151F4FC95F00A1FE1A /* TicketTableViewCell.swift */; };
 		855D5D181F4FC97400A1FE1A /* TicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D171F4FC97400A1FE1A /* TicketTableViewController.swift */; };
 		855D5D1C1F4FCF4600A1FE1A /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */; };
-		85DD1CDE1F7F449100C400C1 /* TicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD1CDD1F7F449100C400C1 /* TicketTests.swift */; };
-		85DD1CE01F7F4A8C00C400C1 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD1CDF1F7F4A8C00C400C1 /* LoginTests.swift */; };
 		85F698F21F4E9EC0009DA1D4 /* spiderman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698EE1F4E9EC0009DA1D4 /* spiderman.jpg */; };
 		85F698F31F4E9EC0009DA1D4 /* valerian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698EF1F4E9EC0009DA1D4 /* valerian.jpg */; };
 		85F698F41F4E9EC0009DA1D4 /* dunkirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */; };
@@ -79,8 +77,6 @@
 		855D5D151F4FC95F00A1FE1A /* TicketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		855D5D171F4FC97400A1FE1A /* TicketTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewController.swift; sourceTree = "<group>"; };
 		855D5D1B1F4FCF4600A1FE1A /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
-		85DD1CDD1F7F449100C400C1 /* TicketTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTests.swift; sourceTree = "<group>"; };
-		85DD1CDF1F7F4A8C00C400C1 /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		85F698EE1F4E9EC0009DA1D4 /* spiderman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spiderman.jpg; sourceTree = "<group>"; };
 		85F698EF1F4E9EC0009DA1D4 /* valerian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valerian.jpg; sourceTree = "<group>"; };
 		85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk.jpg; sourceTree = "<group>"; };
@@ -263,8 +259,6 @@
 			children = (
 				DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */,
 				DC4C11681F4AAA8900BD9532 /* Info.plist */,
-				85DD1CDD1F7F449100C400C1 /* TicketTests.swift */,
-				85DD1CDF1F7F4A8C00C400C1 /* LoginTests.swift */,
 			);
 			path = JFCinemaAppTests;
 			sourceTree = "<group>";
@@ -554,9 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DD1CE01F7F4A8C00C400C1 /* LoginTests.swift in Sources */,
 				DC4C11671F4AAA8900BD9532 /* JFCinemaAppTests.swift in Sources */,
-				85DD1CDE1F7F449100C400C1 /* TicketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
