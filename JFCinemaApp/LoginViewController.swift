@@ -28,6 +28,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func userLogin(_ sender: UIButton) {
+<<<<<<< HEAD
+=======
+        
+>>>>>>> ee6fd08bc5f64d7c9fcaf1222a5aa95b5d1e52c5
         //path of core data
         let path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
         print("\(path)")
@@ -53,7 +57,19 @@ class LoginViewController: UIViewController {
                 //usernameTextField.text = ""
                 passwordTextField.text = ""
             }
+
+            // If password is incorrect
+            if (usernameTextField.text! == user.username! && passwordTextField.text! != user.password!) {
+                print("invalid password")
+                
+                let alert = UIAlertController(title: "Error", message: "Invalid password", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Re-enter", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+                // clear the fields
+                //usernameTextField.text = ""
+                passwordTextField.text = ""
+            }
         }
     }
-    
 }
