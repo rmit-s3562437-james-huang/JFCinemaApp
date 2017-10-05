@@ -1604,7 +1604,7 @@
                                     <constraint firstAttribute="width" constant="736" id="xct-nx-gsi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.25123000140000001" green="0.47587636109999998" blue="0.32555511590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
