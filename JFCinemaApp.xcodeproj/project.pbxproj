@@ -15,6 +15,7 @@
 		85F698F31F4E9EC0009DA1D4 /* valerian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698EF1F4E9EC0009DA1D4 /* valerian.jpg */; };
 		85F698F41F4E9EC0009DA1D4 /* dunkirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */; };
 		85F698F51F4E9EC0009DA1D4 /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85F698F11F4E9EC0009DA1D4 /* minions.jpg */; };
+		85FBAB8B1F81DB7D00BABFD7 /* TicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBAB8A1F81DB7D00BABFD7 /* TicketTests.swift */; };
 		DC076C481F4E93D300A9395F /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC076C471F4E93D300A9395F /* DescViewController.swift */; };
 		DC0E031B1F52A6D9001FA916 /* TestMainContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03171F52A6D9001FA916 /* TestMainContactsView.swift */; };
 		DC0E031C1F52A6D9001FA916 /* TestMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E03181F52A6D9001FA916 /* TestMainView.swift */; };
@@ -81,6 +82,7 @@
 		85F698EF1F4E9EC0009DA1D4 /* valerian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valerian.jpg; sourceTree = "<group>"; };
 		85F698F01F4E9EC0009DA1D4 /* dunkirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkirk.jpg; sourceTree = "<group>"; };
 		85F698F11F4E9EC0009DA1D4 /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minions.jpg; sourceTree = "<group>"; };
+		85FBAB8A1F81DB7D00BABFD7 /* TicketTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTests.swift; sourceTree = "<group>"; };
 		8A6E8DB1BFD306C2C5964506 /* libPods-JFCinemaApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFCinemaApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC076C471F4E93D300A9395F /* DescViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
 		DC0E03171F52A6D9001FA916 /* TestMainContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainContactsView.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			children = (
 				DC4C11661F4AAA8900BD9532 /* JFCinemaAppTests.swift */,
 				DC4C11681F4AAA8900BD9532 /* Info.plist */,
+				85FBAB8A1F81DB7D00BABFD7 /* TicketTests.swift */,
 			);
 			path = JFCinemaAppTests;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4C11671F4AAA8900BD9532 /* JFCinemaAppTests.swift in Sources */,
+				85FBAB8B1F81DB7D00BABFD7 /* TicketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
